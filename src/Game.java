@@ -27,14 +27,15 @@ public class Game {
                    Choice = Myscanner.nextInt();
                      
                    if(Choice == 1){
-                       Main.animation(Texte.North, 45);
+                       Main.animation(NorthText.North, 45);
                    }
                    
                    if(Choice == 2){
-
+                      Main.animation(EastText.East, 45);
                    }
 
                    if(Choice == 3){
+                      Main.animation(WestText.West, 45);
                        
                    }
                    }
