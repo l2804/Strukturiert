@@ -12,44 +12,61 @@ public class Game {
         
     }
         public void story(){
-        Main.animation(Texte.intro1, 45);
-        Main.animation(Texte.story1, 45);
+        System.out.println(Texte.intro1);
+        System.out.println(Texte.story1);
         Choice = Myscanner.nextInt();
 
                if(Choice == 1){
-                   Main.animation(Texte.Attack, 45);
+                   System.out.println(Texte.Attack);
                    enterScanner.nextLine();
                    story();
                    }
-                if(Choice == 2){
-                   Main.animation(Texte.Run, 45);
-                   Main.animation(Texte.Town, 45);
+                
+                   if(Choice == 2){
+                   System.out.println(Texte.Run);
+                   System.out.println(Texte.Town);
                    Choice = Myscanner.nextInt();
                      
-                   if(Choice == 1){
-                       Main.animation(NorthText.North, 45);
+                     if(Choice == 1){
+                     North();
+                     }
+
+                     if(Choice == 2){
+                        System.out.println(EastText.East);
+                     }
+
+                     if(Choice == 3){
+                        System.out.println(WestText.West);
+                     }
                    }
                    
-                   if(Choice == 2){
-                      Main.animation(EastText.East, 45);
-                   }
-
-                   if(Choice == 3){
-                      Main.animation(WestText.West, 45);
-                       
-                   }
-                   }
                 if(Choice==2804){      
-                   Main.animation(Texte.God, 45);                                               
+                  System.out.println(Texte.God);                                               
                    enterScanner.nextLine();
                    }
                 else{
                    story();
                    }
+                  }
+                  
+   public void North(){
+      System.out.println(NorthText.North);
+      Choice = Myscanner.nextInt();
+         
+         if(Choice == 1){
+            System.out.println(NorthText.Help);
+         }
+
+         if(Choice == 2){
+            Main.animation(NorthText.Back, 45);
+            
+         }
+      }
+   
 
                        
 
 
         }
-}
+
 
