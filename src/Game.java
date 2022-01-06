@@ -14,8 +14,7 @@ public class Game {
    story();
    }
          public void story(){
-         System.out.println(Texte.intro1);
-         System.out.println(Texte.story1);
+         System.out.println(Texte.intro);
          Choice = Myscanner.nextInt();
 
                if(Choice == 1){
@@ -26,7 +25,6 @@ public class Game {
                 
                if(Choice == 2){
                System.out.println(Texte.Run);
-               System.out.println(Texte.Town);
                Choice = Myscanner.nextInt();
                      
                      if(Choice == 1){
@@ -40,6 +38,12 @@ public class Game {
                      if(Choice == 3){
                      West();
                      }
+
+                     else{
+                     System.out.println(Texte.Else);
+                     enterScanner.nextLine();
+                     story();
+                     }
                }
                    
                if(Choice==2804){      
@@ -48,57 +52,131 @@ public class Game {
                }
                 
                else{
+               System.out.println(Texte.Else);
+               enterScanner.nextLine();
+               story();
+
                story();
                }
          }
                   
-   public void North(){
-   System.out.println(NorthText.North);
-   Choice = Myscanner.nextInt();
-         
-         if(Choice == 1){
-         System.out.println(NorthText.Help);
-         Choice = Myscanner.nextInt();
+               public void North(){
+               System.out.println(NorthText.North);
+               Choice = Myscanner.nextInt();
+                     
+                     if(Choice == 1){
+                     System.out.println(NorthText.Help);
+                     Choice = Myscanner.nextInt();
 
-               if(Choice == 1){
-               System.out.println(NorthText.join);
-               enterScanner.nextLine();
-               Bar();
+                           if(Choice == 1){
+                           System.out.println(NorthText.join);
+                           enterScanner.nextLine();
+                           Bar();
+                           }
+
+                           if(Choice == 2){
+                           System.out.println(NorthText.DeadEnd);
+                           enterScanner.nextLine();
+                           Bar2();
+                           }
+
+                           else{
+                           System.out.println(NorthText.Else);
+                           enterScanner.nextLine();
+                           North();
+                           }
+
+                     if(Choice == 2){
+                     System.out.println(NorthText.Back);
+                     North();
+                     }
+
+                     if(Choice==3){   
+                     System.out.println(NorthText.Ignore); 
+                     enterScanner.nextLine();
+                     North();                                                                      
+                     }
+
+                     else{
+                     System.out.println(NorthText.Else);
+                     enterScanner.nextLine();
+                     North();
+                     }
+               
+                  }
+
                }
 
-               if(Choice==2){                                                            // Asked the Woman for Money ( Chapter 2.1.1.2 )
-               System.out.println(NorthText.Money);
-               enterScanner.nextLine();
+               public void East(){
+               System.out.println(EastText.East);
+               Choice = Myscanner.nextInt();
+
+                     if(Choice == 1){
+                     System.out.println(EastText.Attack);
+                     Choice = Myscanner.nextInt();
+                           
+                           if(Choice == 1){
+                           System.out.println(EastText.Join);
+                           enterScanner.nextLine();
+                           Bar();
+                           }
+
+                           if(Choice == 2){
+                           System.out.println(EastText.Money);
+                           enterScanner.nextLine();
+                           BarDad();
+                           }
+
+                           if(Choice == 3){
+                           System.out.println(EastText.Nothing);
+                           enterScanner.nextLine();
+                           Bar2();
+                           }
+
+                           if(Choice == 42069){
+                           System.out.println(EastText.FourTwoZeroSixNine);
+                           enterScanner.nextLine();
+                           Bar();
+                           }
+                  
+
+                           else{
+                           System.out.println(EastText.Else1);
+                           East();
+                           }
+                     }
+
+                     if(Choice == 2){
+                     System.out.println(EastText.Ignore);
+                     enterScanner.nextLine();
+                     story();
+                     }
+
+                     else{
+                     System.out.println(EastText.Else1);
+                     East();
+                     }
+
+                  }
+               
+
+               public void West(){
+               System.out.println(WestText.West);
                }
 
-               if(Choice == 3){
-               System.out.println(NorthText.DeadEnd);
-               enterScanner.nextLine();
-               Bar2();
-               }
+                     public void Bar(){   // Bar with Hannah
+                       
+                     }
 
-         if(Choice == 2){
-         System.out.println(NorthText.Back);
-         North();
-         }
+                     public void Bar2(){  // Bar Alone
 
-         if(Choice==3){   
-         System.out.println(NorthText.Ignore); 
-         enterScanner.nextLine();
-         North();                                                                      
-         }
-   
-      }
+                     }
 
-   }
+                     public void BarDad(){   // Bar of the Dad
 
-   public void East(){
-   System.out.println(EastText.East);
-   }
+                     }
 
-   public void West(){
-   System.out.println(WestText.West);
-   }
+
 }
 
 
