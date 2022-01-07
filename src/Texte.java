@@ -13,25 +13,27 @@ static String intro = "Hello \n"
 + "But you don't have the time to think about it, because a Goblin lord jumps right infront of you.\n"
 + "So, what are you going to do?\n\n"
 + "-------------------------------------------------------------------------------------------------------------------\n\n"
-+ "1: Attack him\n" + "2: Run away and search for a village\n\n"
++ "1: Attack him\n"             + "2: Run away and search for a village\n\n"
 + "-------------------------------------------------------------------------------------------------------------------\n\n";
 
         static String Attack =
         "You attacked The Goblin Lord...\n"
-        + "...But he is much stronger than you and kills you with one hit.\n\n" + "\nYOU ARE DEAD\n" + "\nPlease try again."
+        + "...But he is much stronger than you and kills you with one hit.\n\n"         + "\nYOU ARE DEAD\n"            
+        + "\nPlease try again."
         + "\n Press Enter to go back to the beginning\n";
 
         static String Run =
         "\nYou Ran away and luckily the Goblin Lord doesn't follow you.\n"
-        + "...\n" + "After two hours of walking you reach a big town.\n\n"
-        + "You walk in the Town and walk up to a crossroad.\n" + "You came from the South side\n" + "\nWhat are you going to do?\n\n"
+        + "...\n"               + "After two hours of walking you reach a big town.\n\n"
+        + "You walk in the Town and walk up to a crossroad.\n"          + "You came from the South side\n" 
+        + "\nWhat are you going to do?\n\n"
         + "-------------------------------------------------------------------------------------------------------------------\n\n"
-        + "1: Go North\n" + "2: Go East\n" + "3: Go West\n"
+        + "1: Go North\n"               + "2: Go East\n"                + "3: Go West\n"
         + "\n----------------------------------------------------------------------------------------------------------------\n\n";
 
         static String God = 
         "\nCongrats, You touch a god rock and archieved the powers of a god\n So you destroy all bad in the world and go back to your world\n"
-        + "You won the game, congrats\n" + "\nPress Enter to go back to the beginning\n";
+        + "You won the game, congrats\n"                + "\nPress Enter to go back to the beginning\n";
 
         static String Else = "\nBecause you didn't choose a path that was available you will start your adventure again."
         + "n\nPlease Press Enter to Continue.";

@@ -6,7 +6,9 @@ public class Game {
     Scanner enterScanner = new Scanner (System.in);
     static Scanner Myscanner = new Scanner (System.in);
     public String Girl1Name;
-    NorthText Text;
+    Player player;
+    Enemy enemy;
+    Fight fight;
 
     
     
@@ -162,20 +164,26 @@ public class Game {
 
                public void West(){
                System.out.println(WestText.West);
+               enterScanner.nextLine();
+               Bar2();               
                }
 
-                     public void Bar(){   // Bar with Hannah
-                       
-                     }
+                        public void Bar(){   // Bar with Hannah
+                        
+                        }
 
-                     public void Bar2(){  // Bar Alone
+                        public void Bar2(){  // Bar Alone
+                        System.out.println(BarsTexte.Bar2);
+                        }
 
-                     }
+                        public void BarDad(){   // Bar of the Dad
+                        System.out.println(BarsTexte.BarDad);
+                        Choice = Myscanner.nextInt();
 
-                     public void BarDad(){   // Bar of the Dad
-
-                     }
-
+                              if(Choice == 1){
+                              fight.PujinFight();
+                              }
+                        }
 
 }
 
