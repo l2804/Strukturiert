@@ -16,12 +16,14 @@ static String intro = "Hello \n"
 + "1: Attack him\n"             + "2: Run away and search for a village\n\n"
 + "-------------------------------------------------------------------------------------------------------------------\n\n";
 
+        //You attack The Goblin Lord
         static String Attack =
         "You attacked The Goblin Lord...\n"
         + "...But he is much stronger than you and kills you with one hit.\n\n"         + "\nYOU ARE DEAD\n"            
         + "\nPlease try again."
         + "\n Press Enter to go back to the beginning\n";
 
+        //You run away from the Goblin Lord
         static String Run =
         "\nYou Ran away and luckily the Goblin Lord doesn't follow you.\n"
         + "...\n"               + "After two hours of walking you reach a big town.\n\n"
@@ -31,10 +33,12 @@ static String intro = "Hello \n"
         + "1: Go North\n"               + "2: Go East\n"                + "3: Go West\n"
         + "\n----------------------------------------------------------------------------------------------------------------\n\n";
 
+        //You are GOD
         static String God = 
         "\nCongrats, You touch a god rock and archieved the powers of a god\n So you destroy all bad in the world and go back to your world\n"
         + "You won the game, congrats\n"                + "\nPress Enter to go back to the beginning\n";
 
+        //If you choose something that isn't in Choice
         static String Else = "\nBecause you didn't choose a path that was available you will start your adventure again."
         + "n\nPlease Press Enter to Continue.";
 

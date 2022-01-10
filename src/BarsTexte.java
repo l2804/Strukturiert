@@ -3,14 +3,17 @@ public class BarsTexte {
     Player player;
     Enemy enemy;
 
+    //Bar with a Girl/Women
     static String Bar = "In the bar you get each a beer and talk\n\n"       + "Hannah: So, i am 18 years old, and you ?\n\n"
-            + "You ask that you are 19 years old\n"         + "Hannah: 19, huh.\n...That's a great age.\n";
+            + "You tell her, that you are 19 years old\n"         + "Hannah: 19, huh.\n...That's a great age.\n";
 
+    //Bar Alone
     static String Bar2 = "\nYou go in a bar and order a drink.\n"       
 + "So you Drink and start to think about what you are going to do next.\n"      + "\nYou: What am i going to do?\n"
 + "\nYou: What can I do as an 19 years old boy?\n";
     
-     static String BarDad = "\nAt the Bar of her Dad you sit down at a table and talk until her dad comes.\n"
+    //Bar of her dad after you ask her For Money
+    static String BarDad = "\nAt the Bar of her Dad you sit down at a table and talk until her dad comes.\n"
 + "\nAt first the girl tells you her name and you tell her yours.\n\n"  +       "\nThe girls Name is Hannah\n"
 + "\nSo you start to talk.\n"       + "\nHannah: So I'm 17, how old are you?\n"         + "You answer,that you are 19 years old"
 + "Hannah: 19 huh, that's great.\n"         + "Hannah: Sooo, what are we going to do after my Dad comes?\n"
@@ -32,5 +35,9 @@ public class BarsTexte {
 + "1: Attack him back\n"        + "2: Run away\n"
 + "\n-----------------------------------------------------------------------------\n\n";
 
-         
+    static String BarDad2 = "\nPujin: You won against me, you are a worthy Man for my Daughter."    + "You: Sorry, but i can't marry your Daughter.\n"
++ "\nI have to find a ay back home."    + "Pujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
++ "You: Ok, but if i find a way back home i will let you here with your daughter.\n";
+
+        static String Run = "\nYou try to run away.";       
 }

@@ -1,190 +1,191 @@
 import java.util.Scanner;
 
 public class Game {
-    
-    public int Choice;
-    Scanner enterScanner = new Scanner (System.in);
-    static Scanner Myscanner = new Scanner (System.in);
-    public String Girl1Name;
-    Player player;
-    Enemy enemy;
-    Fight fight;
 
-    
-    
-   public void startGame(Game game) {
-   story();
-   }
-         public void story(){
-         System.out.println(Texte.intro);
-         Choice = Myscanner.nextInt();
+      public int choice;
+      Scanner enterScanner = new Scanner(System.in);
+      static Scanner myScanner = new Scanner(System.in);
+      public String Girl1Name;
+      Player player;
+      Enemy enemy;
+      Fight fight = new Fight();
 
-               if(Choice == 1){
-               System.out.println(Texte.Attack);
-               enterScanner.nextLine();
-               story();
-               }
-                
-               if(Choice == 2){
-               System.out.println(Texte.Run);
-               Choice = Myscanner.nextInt();
-                     
-                     if(Choice == 1){
-                     North();
-                     }
+      public void startGame(Game game) {
+            story();
+      }
 
-                     if(Choice == 2){
-                     East();
-                     }
+      public void story() {
+            Main.animation(Texte.intro, 0);
+            choice = myScanner.nextInt();
 
-                     if(Choice == 3){
-                     West();
-                     }
+            if (choice == 1) {
+                  Main.animation(Texte.Attack, 0);
+                  enterScanner.nextLine();
+                  story();
+            }
 
-                     else{
-                     System.out.println(Texte.Else);
-                     enterScanner.nextLine();
-                     story();
-                     }
-               }
-                   
-               if(Choice==2804){      
-               System.out.println(Texte.God);                                               
-               enterScanner.nextLine();
-               }
-                
-               else{
-               System.out.println(Texte.Else);
-               enterScanner.nextLine();
-               story();
+            if (choice == 2) {
+                  Main.animation(Texte.Run, 0);
+                  choice = myScanner.nextInt();
 
-               story();
-               }
-         }
-                  
-               public void North(){
-               System.out.println(NorthText.North);
-               Choice = Myscanner.nextInt();
-                     
-                     if(Choice == 1){
-                     System.out.println(NorthText.Help);
-                     Choice = Myscanner.nextInt();
-
-                           if(Choice == 1){
-                           System.out.println(NorthText.join);
-                           enterScanner.nextLine();
-                           Bar();
-                           }
-
-                           if(Choice == 2){
-                           System.out.println(NorthText.DeadEnd);
-                           enterScanner.nextLine();
-                           Bar2();
-                           }
-
-                           else{
-                           System.out.println(NorthText.Else);
-                           enterScanner.nextLine();
-                           North();
-                           }
-
-                     if(Choice == 2){
-                     System.out.println(NorthText.Back);
-                     North();
-                     }
-
-                     if(Choice==3){   
-                     System.out.println(NorthText.Ignore); 
-                     enterScanner.nextLine();
-                     North();                                                                      
-                     }
-
-                     else{
-                     System.out.println(NorthText.Else);
-                     enterScanner.nextLine();
-                     North();
-                     }
-               
+                  if (choice == 1) {
+                        North();
                   }
 
-               }
-
-               public void East(){
-               System.out.println(EastText.East);
-               Choice = Myscanner.nextInt();
-
-                     if(Choice == 1){
-                     System.out.println(EastText.Attack);
-                     Choice = Myscanner.nextInt();
-                           
-                           if(Choice == 1){
-                           System.out.println(EastText.Join);
-                           enterScanner.nextLine();
-                           Bar();
-                           }
-
-                           if(Choice == 2){
-                           System.out.println(EastText.Money);
-                           enterScanner.nextLine();
-                           BarDad();
-                           }
-
-                           if(Choice == 3){
-                           System.out.println(EastText.Nothing);
-                           enterScanner.nextLine();
-                           Bar2();
-                           }
-
-                           if(Choice == 42069){
-                           System.out.println(EastText.FourTwoZeroSixNine);
-                           enterScanner.nextLine();
-                           Bar();
-                           }
-                  
-
-                           else{
-                           System.out.println(EastText.Else1);
-                           East();
-                           }
-                     }
-
-                     if(Choice == 2){
-                     System.out.println(EastText.Ignore);
-                     enterScanner.nextLine();
-                     story();
-                     }
-
-                     else{
-                     System.out.println(EastText.Else1);
-                     East();
-                     }
-
+                  if (choice == 2) {
+                        East();
                   }
-               
 
-               public void West(){
-               System.out.println(WestText.West);
-               enterScanner.nextLine();
-               Bar2();               
-               }
+                  if (choice == 3) {
+                        West();
+                  }
 
-                        public void Bar(){   // Bar with Hannah
-                        
-                        }
+                  else {
+                        Main.animation(Texte.Else, 0);
+                        enterScanner.nextLine();
+                        story();
+                  }
+            }
 
-                        public void Bar2(){  // Bar Alone
-                        System.out.println(BarsTexte.Bar2);
-                        }
+            if (choice == 2804) {
+                  Main.animation(Texte.God, 0);
+                  enterScanner.nextLine();
+            }
 
-                        public void BarDad(){   // Bar of the Dad
-                        System.out.println(BarsTexte.BarDad);
-                        Choice = Myscanner.nextInt();
+            else {
+                  Main.animation(Texte.Else, 0);
+                  enterScanner.nextLine();
+                  story();
 
-                              if(Choice == 1){
-                              fight.PujinFight();
-                              }
-                        }
+                  story();
+            }
+      }
+
+      public void North() {
+            Main.animation(NorthText.North, 0);
+            choice = myScanner.nextInt();
+
+            if (choice == 1) {
+                  Main.animation(NorthText.Help, 0);
+                  choice = myScanner.nextInt();
+
+                  if (choice == 1) {
+                        Main.animation(NorthText.join, 0);
+                        enterScanner.nextLine();
+                        Bar();
+                  }
+
+                  if (choice == 2) {
+                        Main.animation(NorthText.DeadEnd, 0);
+                        enterScanner.nextLine();
+                        Bar2();
+                  }
+
+                  else {
+                        Main.animation(NorthText.Else, 0);
+                        enterScanner.nextLine();
+                        North();
+                  }
+
+                  if (choice == 2) {
+                        Main.animation(NorthText.Back, 0);
+                        North();
+                  }
+
+                  if (choice == 3) {
+                        Main.animation(NorthText.Ignore, 0);
+                        enterScanner.nextLine();
+                        North();
+                  }
+
+                  else {
+                        Main.animation(NorthText.Else, 0);
+                        enterScanner.nextLine();
+                        North();
+                  }
+
+            }
+
+      }
+
+      public void East() {
+            Main.animation(EastText.East, 0);
+            choice = myScanner.nextInt();
+
+            if (choice == 1) {
+                  Main.animation(EastText.Attack, 0);
+                  choice = myScanner.nextInt();
+
+                  if (choice == 1) {
+                        Main.animation(EastText.Join, 0);
+                        enterScanner.nextLine();
+                        Bar();
+                  }
+
+                  if (choice == 2) {
+                        Main.animation(EastText.Money, 0);
+                        enterScanner.nextLine();
+                        BarDad();
+                  }
+
+                  if (choice == 3) {
+                        Main.animation(EastText.Nothing, 0);
+                        enterScanner.nextLine();
+                        Bar2();
+                  }
+
+                  if (choice == 42069) {
+                        Main.animation(EastText.FourTwoZeroSixNine, 0);
+                        enterScanner.nextLine();
+                        Bar();
+                  }
+
+                  else {
+                        Main.animation(EastText.Else1, 0);
+                        East();
+                  }
+            }
+
+            if (choice == 2) {
+                  Main.animation(EastText.Ignore, 0);
+                  enterScanner.nextLine();
+                  story();
+            }
+
+            else {
+                  Main.animation(EastText.Else1, 0);
+                  East();
+            }
+
+      }
+
+      public void West() {
+            Main.animation(WestText.West, 0);
+            enterScanner.nextLine();
+            Bar2();
+      }
+
+      public void Bar() { // Bar with Hannah
+
+      }
+
+      public void Bar2() { // Bar Alone
+            Main.animation(BarsTexte.Bar2, 0);
+      }
+
+      public void BarDad() { // Bar of the Dad
+            Main.animation(BarsTexte.BarDad, 0);
+            choice = myScanner.nextInt();
+
+            if (choice == 1) {
+                  fight.PujinFight();
+                  enterScanner.nextLine();
+                  Main.animation(BarsTexte.BarDad2, 0);
+            }
+
+            if (choice == 2) {
+                  Main.animation(BarsTexte.Run, 0);
+            }
+      }
 
 }
-
-

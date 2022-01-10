@@ -1,4 +1,6 @@
 public class Enemy {
+
+    Fight fight;
     int damage = 1;
     int health = 15;  
 

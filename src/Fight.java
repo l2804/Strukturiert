@@ -2,31 +2,34 @@ import java.util.Scanner;
 
 public class Fight {
 
-    Scanner enterScanner = new Scanner (System.in);
-    Player player;
-    Enemy enemy;
+    Scanner enterScanner = new Scanner(System.in);
+    Player player = new Player();
+    Enemy enemy = new Enemy();
+    Game game;
 
+    //Fight with Pujin
+    public void PujinFight() {
+        Main.animation("\nPujins HP: " + enemy.getHealth(), 0);
+        Main.animation("\nPujins Damage: " + enemy.getDamage(), 0);
+        Main.animation("\n\nYour Damage: " + player.getDamage(), 0);
+        Main.animation("\nYour HP: " + player.getHealth(), 0);
+        Main.animation("\n\nYou attack him back and hit him\n", 0);
 
-    public void PujinFight(){
-        System.out.println("\nPujins HP: " + enemy.getHealth());
-        System.out.println("\nPujins Damage: " + enemy.getDamage());
-        System.out.println("\n\nYour Damage: " + player.getDamage());
-        System.out.println("\nYour HP: " + player.getHealth());
-        System.out.println("\n\nYou attack him back and hit him\n");
-        
-            while(enemy.getHealth() > 0){
-            System.out.println("You hit him and deal 3 damage but you deal 1 damage, too.\n");
+        while (enemy.getHealth() > 0) {
+            Main.animation("You hit him and he deals " + player.getDamage(), 0);
+            Main.animation("damage but, because he hits you too you deal " + enemy.getDamage() + " damage, too.\n", 0);
             enemy.setHealth(enemy.getHealth() - player.getHealth());
             player.setHealth(player.getHealth() - enemy.getHealth());
-            System.out.println("Your Hp = " + player.getHealth());
-            System.out.println("\nPujins HP: " + enemy.getHealth());
-            System.out.println("\nYour HP: " + player.getHealth());
-            System.out.println("\nPress Enter to Attack him again.\n");
+            Main.animation("Your Hp = " + player.getHealth(), 0);
+            Main.animation("\nPujins HP: " + enemy.getHealth(), 0);
+            Main.animation("\nYour HP: " + player.getHealth(), 0);
+            Main.animation("\nPress Enter to Attack him again.\n", 0);
             enterScanner.nextLine();
-            }
-        
-        System.out.println("\n\n***You defeat Pujin***\n");
-        
+        }
+
+        Main.animation("\n\n***You defeat Pujin***\n", 0);
+        Main.animation("\n\nPleas press Enter to continue", 0);
+
     }
 
 }
