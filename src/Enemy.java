@@ -3,6 +3,7 @@ public class Enemy {
     Fight fight;
     int damage = 1;
     int health = 15;  
+    String name;
 
     // Get the Enemys Health
     public int getHealth() {
@@ -23,4 +24,15 @@ public class Enemy {
     public void setDamage(int i) {
         damage = i;
     }
+
+    //set the enemy Name
+    public void setName(String in) {
+        name = in;
+    }
+
+    //get the enemy Name
+    public String getName() {
+        return name;
+    }
+
 }

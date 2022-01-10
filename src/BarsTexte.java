@@ -37,7 +37,7 @@ public class BarsTexte {
 
     static String BarDad2 = "\nPujin: You won against me, you are a worthy Man for my Daughter."    + "You: Sorry, but i can't marry your Daughter.\n"
 + "\nI have to find a ay back home."    + "Pujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
-+ "You: Ok, but if i find a way back home i will let you here with your daughter.\n";
++ "You: Ok, but if i find a way back home i will let you here with your daughter.\n"    + "You: Ok, but i'll get her back safe, i swear.\n";
 
-        static String Run = "\nYou try to run away.";       
+        static String Run = "\nYou try to run away." + "While you run Away you run into Adolf Schwitler.\n";   
 }

@@ -11,16 +11,16 @@ public class Fight {
     public void PujinFight() {
         Main.animation("\nPujins HP: " + enemy.getHealth(), 0);
         Main.animation("\nPujins Damage: " + enemy.getDamage(), 0);
-        Main.animation("\n\nYour Damage: " + player.getDamage(), 0);
-        Main.animation("\nYour HP: " + player.getHealth(), 0);
+        Main.animation("\n\nYour HP: " + player.getHealth(), 0);
+        Main.animation("\nYour Damage: " + player.getDamage(), 0);
         Main.animation("\n\nYou attack him back and hit him\n", 0);
 
         while (enemy.getHealth() > 0) {
-            Main.animation("You hit him and he deals " + player.getDamage(), 0);
-            Main.animation("damage but, because he hits you too you deal " + enemy.getDamage() + " damage, too.\n", 0);
+            Main.animation("\n----------------------------------------------------------------------------------------------\n\n", 0);
+            Main.animation("\nYou hit him and he deals " + player.getDamage(), 0);
+            Main.animation(" damage but, because he hits you too you deal " + enemy.getDamage() + " damage, too.\n", 0);
             enemy.setHealth(enemy.getHealth() - player.getHealth());
             player.setHealth(player.getHealth() - enemy.getHealth());
-            Main.animation("Your Hp = " + player.getHealth(), 0);
             Main.animation("\nPujins HP: " + enemy.getHealth(), 0);
             Main.animation("\nYour HP: " + player.getHealth(), 0);
             Main.animation("\nPress Enter to Attack him again.\n", 0);
