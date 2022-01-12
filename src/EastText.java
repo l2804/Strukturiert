@@ -32,9 +32,9 @@ public class EastText {
                     static String Nothing = "\nYou ask for Nothing.\n"      + "The Girl thanks you Gratefully and goes home.\n"
                 + "\nSo you are going to a Bar to relax after that day.\n"      + "\nPress Enter to continue\n\n";
             
-                    //Special
+                    //Special   (Code: 42069)
                     static String FourTwoZeroSixNine = "\nYou ask her for a Special Favour and Went to a near Hotel\n"      + "...\n"
-                + "After that she teslls you, her Name and that she loves you and that she wants to go with you\n" 
+                + "After that she tells you, her Name and that she loves you and that she wants to go with you\n" 
                 + "Her Name is Hannah."         + "\n\nAs next you go to a Bar Hannah knows\n\n\n"      + "Press Enter to Continue\n";
             
             //You Ignore Her and Die

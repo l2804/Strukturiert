@@ -1,6 +1,6 @@
 public class BarsTexte {
 
-    Player player;
+    Player player = new Player();
     Enemy enemy;
 
     //Bar with a Girl/Women
@@ -39,5 +39,10 @@ public class BarsTexte {
 + "\nI have to find a ay back home."    + "Pujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
 + "You: Ok, but if i find a way back home i will let you here with your daughter.\n"    + "You: Ok, but i'll get her back safe, i swear.\n";
 
-        static String Run = "\nYou try to run away." + "While you run Away you run into Adolf Schwitler.\n";   
+        static String Run = "\nYou try to run away." + "While you run Away you run into Adolf Schwitler.\n"
+    + "He Attacks you.\n" + "*Press Enter to Fight him*\n";
+
+            static String Dead = "\n***You get revived and get a chance to survive by getting ported back to Pujins Bar.***\n";
+
+            static String WonSchwitler = "\nSchwitler: Oh, i thought you  are a Yoda.\n";
 }

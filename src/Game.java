@@ -6,8 +6,8 @@ public class Game {
       Scanner enterScanner = new Scanner(System.in);
       static Scanner myScanner = new Scanner(System.in);
       public String Girl1Name;
-      Player player;
-      Enemy enemy;
+      Player player = new Player();
+      Enemy enemy = new Enemy();
       Fight fight = new Fight();
 
       public void startGame(Game game) {
@@ -25,41 +25,69 @@ public class Game {
             }
 
             if (choice == 2) {
-                  Main.animation(Texte.Run, 0);
-                  choice = myScanner.nextInt();
+                  Crossroad();
 
-                  if (choice == 1) {
-                        North();
-                  }
-
-                  if (choice == 2) {
-                        East();
-                  }
-
-                  if (choice == 3) {
-                        West();
-                  }
-
-                  else {
-                        Main.animation(Texte.Else, 0);
-                        enterScanner.nextLine();
-                        story();
-                  }
             }
 
             if (choice == 2804) {
                   Main.animation(Texte.God, 0);
+                  choice = myScanner.nextInt();
+
+                  if (choice == 1){
+                        player.setDamage(player.getDamage() + 10000);
+                        player.setHealth(100000);
+                        player.setMoney(1000000);
+                        Main.animation(Texte.God2, 0);
+                        Crossroad();
+                  }
+
+                  if (choice == 2) {
+                        story();
+                  }
+
+                  else{
+                        Main.animation(Texte.Else, 0);
+                        enterScanner.nextLine();
+                        story(); 
+                  }
+                        
+            }
+      
+            else {
+                  Main.animation(Texte.Else, 0);
                   enterScanner.nextLine();
+                  story();
+            }
+
+      }
+
+            
+      
+      public void Crossroad(){
+            Main.animation(Texte.Run, 0);
+            choice = myScanner.nextInt();
+
+            if (choice == 1) {
+                  North();
+            }
+
+            if (choice == 2) {
+                  East();
+            }
+
+            if (choice == 3) {
+                  West();
             }
 
             else {
                   Main.animation(Texte.Else, 0);
                   enterScanner.nextLine();
                   story();
-
-                  story();
             }
       }
+
+            
+      
 
       public void North() {
             Main.animation(NorthText.North, 0);
@@ -166,7 +194,7 @@ public class Game {
       }
 
       public void Bar() { // Bar with Hannah
-
+            Main.animation(BarsTexte.Bar, 0);
       }
 
       public void Bar2() { // Bar Alone
@@ -185,6 +213,17 @@ public class Game {
 
             if (choice == 2) {
                   Main.animation(BarsTexte.Run, 0);
+                  enterScanner.nextLine();
+                  fight.SchwitlerFight();
+
+                  if (player.getHealth() <= 0){
+                        Main.animation(BarsTexte.Dead, 0);
+                        BarDad();
+                  }
+
+                  if (player.getHealth() >= 1){
+                        Main.animation(BarsTexte.WonSchwitler, 0);
+                  }
             }
       }
 

@@ -16,14 +16,14 @@ static String intro = "Hello \n"
 + "1: Attack him\n"             + "2: Run away and search for a village\n\n"
 + "-------------------------------------------------------------------------------------------------------------------\n\n";
 
-        //You attack The Goblin Lord
+        //You attack The Goblin Lord    (Code 1)
         static String Attack =
         "You attacked The Goblin Lord...\n"
         + "...But he is much stronger than you and kills you with one hit.\n\n"         + "\nYOU ARE DEAD\n"            
         + "\nPlease try again."
         + "\n Press Enter to go back to the beginning\n";
 
-        //You run away from the Goblin Lord
+        //You run away from the Goblin Lord   (Code: 2)
         static String Run =
         "\nYou Ran away and luckily the Goblin Lord doesn't follow you.\n"
         + "...\n"               + "After two hours of walking you reach a big town.\n\n"
@@ -33,10 +33,12 @@ static String intro = "Hello \n"
         + "1: Go North\n"               + "2: Go East\n"                + "3: Go West\n"
         + "\n----------------------------------------------------------------------------------------------------------------\n\n";
 
-        //You are GOD
+        //You are GOD   (Code: 2804)
         static String God = 
-        "\nCongrats, You touch a god rock and archieved the powers of a god\n So you destroy all bad in the world and go back to your world\n"
-        + "You won the game, congrats\n"                + "\nPress Enter to go back to the beginning\n";
+        "\nCongrats, You touch a god rock and archieved the powers of a god\n"          
+        + "You will have it easy to contine\n"
+        + "If you don't want to continue this way, please Press 2\n"    + "But if you want to continue this way please Press 1.\n";
+        static String God2 = "\nHello.\n";
 
         //If you choose something that isn't in Choice
         static String Else = "\nBecause you didn't choose a path that was available you will start your adventure again."
