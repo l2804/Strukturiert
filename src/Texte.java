@@ -1,5 +1,7 @@
 public class Texte {
 
+        Player player;
+
 static String intro = "Hello \n"
 + "Thank you for Playing my Game"
 + "\nIn this Game you are playing a yourself after you got portet into another world \n"
@@ -24,9 +26,8 @@ static String intro = "Hello \n"
         + "\n Press Enter to go back to the beginning\n";
 
         //You run away from the Goblin Lord   (Code: 2)
-        static String Run =
-        "\nYou Ran away and luckily the Goblin Lord doesn't follow you.\n"
-        + "...\n"               + "After two hours of walking you reach a big town.\n\n"
+        static String Run = "\nYou Ran away and luckily the Goblin Lord doesn't follow you.\n";
+        static String Run2 = "...\n"               + "After two hours of walking you reach a big town.\n\n"
         + "You walk in the Town and walk up to a crossroad.\n"          + "You came from the South side\n" 
         + "\nWhat are you going to do?\n\n"
         + "-------------------------------------------------------------------------------------------------------------------\n\n"
@@ -34,11 +35,9 @@ static String intro = "Hello \n"
         + "\n----------------------------------------------------------------------------------------------------------------\n\n";
 
         //You are GOD   (Code: 2804)
-        static String God = 
-        "\nCongrats, You touch a god rock and archieved the powers of a god\n"          
-        + "You will have it easy to contine\n"
-        + "If you don't want to continue this way, please Press 2\n"    + "But if you want to continue this way please Press 1.\n";
-        static String God2 = "\nHello.\n";
+        static String God = "\nCongrats, You touch a god rock and archieved the powers of a god\n"          
+        + "You will have it easy to contine\n"          + "\nIf you want to continue this way please Press 1.\n"
+        + "\nBut if you don't want to continue this way, please Press 2\n\n";
 
         //If you choose something that isn't in Choice
         static String Else = "\nBecause you didn't choose a path that was available you will start your adventure again."

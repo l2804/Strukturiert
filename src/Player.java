@@ -2,7 +2,7 @@ public class Player{
 
     Fight fight;
     private int health = 10;
-    private int food = 100;
+    private int food = 10;
     private int money = 5;
     int damage = 3;
 

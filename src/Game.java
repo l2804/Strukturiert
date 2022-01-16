@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class Game {
 
-      public int choice;
-      Scanner enterScanner = new Scanner(System.in);
-      static Scanner myScanner = new Scanner(System.in);
-      public String Girl1Name;
-      Player player = new Player();
-      Enemy enemy = new Enemy();
-      Fight fight = new Fight();
+      public static int choice;
+      public static Scanner enterScanner = new Scanner(System.in);
+      public static Scanner myScanner = new Scanner(System.in);
+      public static String Girl1Name;
+      public static Player player = new Player();
+      public static Enemy enemy = new Enemy();
+      public static Fight fight = new Fight();
 
-      public void startGame(Game game) {
+      public static void startGame(Game game) {
             story();
       }
 
-      public void story() {
+      public static void story() {
             Main.animation(Texte.intro, 0);
             choice = myScanner.nextInt();
 
@@ -25,6 +25,7 @@ public class Game {
             }
 
             if (choice == 2) {
+                  Main.animation(Texte.Run, 0);
                   Crossroad();
 
             }
@@ -34,10 +35,11 @@ public class Game {
                   choice = myScanner.nextInt();
 
                   if (choice == 1){
-                        player.setDamage(player.getDamage() + 10000);
+                        player.setDamage(1000);
                         player.setHealth(100000);
                         player.setMoney(1000000);
-                        Main.animation(Texte.God2, 0);
+                        Main.animation("Your New HP: " + player.getHealth() + "\n\n", 0);
+                        Main.animation("Your New Damage: " + player.getDamage() + "\n", 0);
                         Crossroad();
                   }
 
@@ -63,33 +65,20 @@ public class Game {
 
             
       
-      public void Crossroad(){
-            Main.animation(Texte.Run, 0);
+      public static void Crossroad(){
+            Main.animation(Texte.Run2, 0);
             choice = myScanner.nextInt();
 
-            if (choice == 1) {
-                  North();
-            }
-
-            if (choice == 2) {
-                  East();
-            }
-
-            if (choice == 3) {
-                  West();
-            }
-
-            else {
-                  Main.animation(Texte.Else, 0);
-                  enterScanner.nextLine();
-                  story();
+            switch(choice) {
+                  case 1: North();
+                  case 2: East();
+                  case 3: West();
+                  default: story();
             }
       }
 
             
-      
-
-      public void North() {
+      public static void North() {
             Main.animation(NorthText.North, 0);
             choice = myScanner.nextInt();
 
@@ -131,12 +120,10 @@ public class Game {
                         enterScanner.nextLine();
                         North();
                   }
-
             }
-
       }
 
-      public void East() {
+      public static  void East() {
             Main.animation(EastText.East, 0);
             choice = myScanner.nextInt();
 
@@ -184,26 +171,27 @@ public class Game {
                   Main.animation(EastText.Else1, 0);
                   East();
             }
-
       }
 
-      public void West() {
+      public static void West() {
             Main.animation(WestText.West, 0);
             enterScanner.nextLine();
             Bar2();
       }
-
-      public void Bar() { // Bar with Hannah
+            
+      public static void Bar() { // Bar with Hannah
             Main.animation(BarsTexte.Bar, 0);
       }
-
-      public void Bar2() { // Bar Alone
+            
+      public static void Bar2() { // Bar Alone
             Main.animation(BarsTexte.Bar2, 0);
       }
+      
 
-      public void BarDad() { // Bar of the Dad
+      public static void BarDad() { // Bar of the Dad
             Main.animation(BarsTexte.BarDad, 0);
             choice = myScanner.nextInt();
+            
 
             if (choice == 1) {
                   fight.PujinFight();
@@ -215,7 +203,6 @@ public class Game {
                   Main.animation(BarsTexte.Run, 0);
                   enterScanner.nextLine();
                   fight.SchwitlerFight();
-
                   if (player.getHealth() <= 0){
                         Main.animation(BarsTexte.Dead, 0);
                         BarDad();

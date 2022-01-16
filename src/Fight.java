@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 public class Fight {
 
-    Scanner enterScanner = new Scanner(System.in);
-    Player player = new Player();
-    Enemy enemy = new Enemy();
-    Game game;
+    public static Scanner enterScanner = new Scanner(System.in);
+    public static Player player = new Player();
+    public static Enemy enemy = new Enemy();
+    public static Game game;
 
  
   
 
-    public void PujinFight(){
+    public static void PujinFight(){
+
         Main.animation("\nPujins HP: " + enemy.getHealth(), 0);
         Main.animation("\nPujins Damage: " + enemy.getDamage(), 0);
         Main.animation("\n\nYour HP: " + player.getHealth(), 0);
@@ -46,7 +47,7 @@ public class Fight {
 
     }
 
-    public void SchwitlerFight() {
+    public static void SchwitlerFight() {
         enemy.setHealth(10);
         enemy.setDamage(5);
 
