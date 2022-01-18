@@ -40,9 +40,19 @@ public class BarsTexte {
 + "You: Ok, but if i find a way back home i will let you here with your daughter.\n"    + "You: Ok, but i'll get her back safe, i swear.\n";
 
         static String Run = "\nYou try to run away." + "While you run Away you run into Adolf Schwitler.\n"
-    + "He Attacks you.\n" + "*Press Enter to Fight him*\n";
+    + "He Attacks you.\n" + "(What are you going to do?)\n"
+    + "\n-----------------------------------------------------------------------------\n\n"
+    + "1: Attack him\n"        + "2: Run away\n"
+    + "\n-----------------------------------------------------------------------------\n\n";
 
             static String Dead = "\n***You get revived and get a chance to survive by getting ported back to Pujins Bar.***\n";
 
             static String WonSchwitler = "\nSchwitler: Oh, i thought you  are a Yoda.\n";
+
+            static String run2 = "\n You run away and run into a man with yellow Hair.\n"
+        + "You: Are you Donalt Trumpet the shitty leader of asmerika?\n"    + "Donalt Trumpet: Fake news, fake news mothafucka!\n"
+        + "With thet words he attacks you.\n"   + "\nPress enter to continue.\n";
+
+                static String wonTrumpet = "\nDonald Trumpet: Ok you have won, but only because you counted wrong, i wold never choose you!\n";
 }
+

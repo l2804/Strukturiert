@@ -8,7 +8,7 @@ public class Game {
       public static String Girl1Name;
       public static Player player = new Player();
       public static Enemy enemy = new Enemy();
-      public static Fight fight = new Fight();
+      public static Fight fight;
 
       public static void startGame(Game game) {
             story();
@@ -194,23 +194,50 @@ public class Game {
             
 
             if (choice == 1) {
-                  fight.PujinFight();
+                  fight.Startfight("Wladimir", "Pujin", "him");
                   enterScanner.nextLine();
                   Main.animation(BarsTexte.BarDad2, 0);
             }
 
             if (choice == 2) {
                   Main.animation(BarsTexte.Run, 0);
-                  enterScanner.nextLine();
-                  fight.SchwitlerFight();
-                  if (player.getHealth() <= 0){
-                        Main.animation(BarsTexte.Dead, 0);
-                        BarDad();
+                  choice = myScanner.nextInt();
+
+
+                  if (choice == 1) {
+                  enemy.setHealth(10);
+                  enemy.setDamage(5);
+                  fight.Startfight("Adolf", "Schwitler", "him");
+
+                        if (player.getHealth() <= 0){
+                              Main.animation(BarsTexte.Dead, 0);
+                              BarDad();
+                        }
+
+                        if (player.getHealth() >= 1){
+                              Main.animation(BarsTexte.WonSchwitler, 0);
+                        }
                   }
 
-                  if (player.getHealth() >= 1){
-                        Main.animation(BarsTexte.WonSchwitler, 0);
+                  if (choice == 2) {
+                        Main.animation(BarsTexte.run2, 0);
+                        enemy.setHealth(8);
+                        enemy.setDamage(3);
+                        enterScanner.nextLine();
+                        fight.Startfight("Donalt", "Trumpet", "him");
+
+                        if (player.getHealth() < 1){
+                              Main.animation(BarsTexte.Dead, 0);
+                              BarDad();
+                        }
+
+                        if (player.getHealth() > 0) {
+                              Main.animation(BarsTexte.wonTrumpet, 0);
+                        }
                   }
+
+
+                  
             }
       }
 
