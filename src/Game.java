@@ -236,8 +236,20 @@ public class Game {
                         }
                   }
 
+                  else{
+                        Main.animation(BarsTexte.Else, 0);
+                        enterScanner.nextLine();
+                        BarDad();
+                  }
+
 
                   
+            }
+
+            else{
+                  Main.animation(BarsTexte.Else, 0);
+                  enterScanner.nextLine();
+                  BarDad();
             }
       }
 

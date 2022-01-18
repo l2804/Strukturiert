@@ -53,6 +53,10 @@ public class BarsTexte {
         + "You: Are you Donalt Trumpet the shitty leader of asmerika?\n"    + "Donalt Trumpet: Fake news, fake news mothafucka!\n"
         + "With thet words he attacks you.\n"   + "\nPress enter to continue.\n";
 
-                static String wonTrumpet = "\nDonald Trumpet: Ok you have won, but only because you counted wrong, i wold never choose you!\n";
+                static String wonTrumpet = "\n\nDonald Trumpet: Ok you won, but only because you counted wrong, i would never choose you!\n";
+
+            static String Else = "\nBecause you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.\n"
+        + "\nPress Enter to Continue";
+
 }
 
