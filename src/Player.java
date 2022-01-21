@@ -4,10 +4,19 @@ public class Player{
     private int health = 10;
     private int food = 10;
     private int money = 5;
-    int damage = 3;
+    private int damage = 3;
+    private int age = 18;
     private String name;
 
+    // set the player Age
+    public int getAge() {
+        return age;
+    }
 
+    //set the Player Age
+    public void setAge(int i) {
+        age = i;
+    }
 
     // set the player Health
     public int getHealth() {
@@ -56,6 +65,32 @@ public class Player{
 
     public String getName() {
         return name;
+    }
+
+
+
+
+    private String girlName;
+    private int girlAge = 18;
+
+
+     //set the player girlName
+     public void setGirlName(String girlName) {
+        this.girlName = girlName;
+    }
+    // Get the girlName
+    public String getGirlName() {
+        return girlName;
+    }
+
+    // set the player girlAge
+    public int getgirlAge() {
+        return girlAge;
+    }
+
+    //set the Player girlAge
+    public void setgirlAge(int i) {
+        girlAge = i;
     }
 
 }

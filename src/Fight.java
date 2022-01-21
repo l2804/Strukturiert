@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
 
 public class Fight {
 
@@ -8,7 +7,6 @@ public class Fight {
     public static Enemy enemy = new Enemy();
     public static Game game;
     private String firstPronoun, secondPronoun, pronoun = "";
-    private String Name = firstPronoun + " " + secondPronoun;
 
 
     public Fight(Player player, Enemy enemy, String firstPronoun, String secondPronoun, String pronoun) {
@@ -22,7 +20,7 @@ public class Fight {
  
   
 
-    public static void Startfight(String firstPronoun, String secondPronoun, String pronoun){
+    public static void Startfight(Player player, Enemy enemy, String firstPronoun, String secondPronoun, String pronoun){
 
         Main.animation("\n" + secondPronoun + "'s HP: " + enemy.getHealth(), 0);
         Main.animation("\n" + secondPronoun + "'s Damage: " + enemy.getDamage(), 0);
@@ -36,10 +34,15 @@ public class Fight {
             Main.animation(" damage but, because he hits you too you deal " + enemy.getDamage() + " damage, too.\n", 0);
             enemy.setHealth(enemy.getHealth() - player.getDamage());
             player.setHealth(player.getHealth() - enemy.getDamage());
+
+            if(enemy.getHealth() < 0){
+                Main.animation("\n" + secondPronoun + "'s HP: 0", 0);
+                Main.animation("\nYour HP: " + player.getHealth(), 0);
+            }
+
+            else if(enemy.getHealth() > 0){
             Main.animation("\n" + secondPronoun + "'s HP: " + enemy.getHealth(), 0);
             Main.animation("\nYour HP: " + player.getHealth(), 0);
-
-            if(enemy.getHealth() > 0){
             Main.animation("\nPress Enter to Attack " + pronoun + " again.\n", 0);
             enterScanner.nextLine();
             }
