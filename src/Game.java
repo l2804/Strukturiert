@@ -11,6 +11,7 @@ public class Game {
       public static Enemy enemy = new Enemy();
       public static Fight fight;
       public static Texte texte = new Texte();
+      public static Girl girl = new Girl();
       
       
 

@@ -1,6 +1,7 @@
 public class Texte {
 
         Player player = new Player();
+        Girl girl = new Girl();
         //Intro
         String intro, Name1, Name2, Intro2, Attack, Run, Run2, God, Else;
         //North
@@ -16,6 +17,9 @@ public class Texte {
 
 public void setPlayer(Player player) {
         this.player = player;
+
+
+
 
 
 /*/*static String*/ intro = "Hello \n"
@@ -213,6 +217,7 @@ public void setPlayer(Player player) {
 
 /*static String*/ Else = "\nBecause you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.\n"
                         + "\nPress Enter to Continue";
+
 
 }
 }
