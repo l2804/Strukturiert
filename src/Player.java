@@ -5,6 +5,7 @@ public class Player{
     private int food = 10;
     private int money = 5;
     int damage = 3;
+    private String name;
 
 
 
@@ -46,6 +47,15 @@ public class Player{
     //set damage
     public void setDamage(int i) {
         damage = i;
+    }
+
+    //set the player name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
 }

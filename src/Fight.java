@@ -30,7 +30,7 @@ public class Fight {
         Main.animation("\nYour Damage: " + player.getDamage(), 0);
         Main.animation("\n\nYou attack " + pronoun + " back and hit him\n", 0);
 
-        while (enemy.getHealth() > 0) {
+        do {
             Main.animation("\n----------------------------------------------------------------------------------------------\n\n", 0);
             Main.animation("\nYou hit " + pronoun + " and he deals " + player.getDamage(), 0);
             Main.animation(" damage but, because he hits you too you deal " + enemy.getDamage() + " damage, too.\n", 0);
@@ -56,5 +56,6 @@ public class Fight {
             Main.animation("\n\nPlease press Enter to continue", 0);
             }
         }
+        while (enemy.getHealth() > 0);
     }
 }
