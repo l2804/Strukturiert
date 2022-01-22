@@ -3,11 +3,11 @@ public class Texte {
         
         Player player = new Player();
         //Intro
-        String intro, Name1, Name2, Age1, Age2, Intro2, Attack, Run, Run2, God, Else;
+        String intro, Name1, Name2, Age1, Age2, Intro2, Attack, Run, Run2, God, NewStats, Else;
         //North
         String North, Help, joinNorth, DeadEnd, Back, Ignore, ElseNorth;
         //East
-        String East, JoinEast, JoinEast2, Money, Nothing, FourTwoZeroSixNine, ElseEast;
+        String East, JoinEast, JoinEast2, Money, Nothing, FourTwoZeroSixNine, FourTwoZeroSixNine2, ElseEast;
         //West
         String West;
         //Bars
@@ -65,6 +65,8 @@ public void setPlayer(Player player) {
 /*static String*/ God = "\nCongrats, You touch a god rock and get the powers of a god\n"          
                         + "You will have it easy to contine\n"          + "\nPress 1 to continue the game with the powers of a God.\n"
                         + "\nPress 2 if you don't want to continue this way.\n\n";
+
+/*static String*/ NewStats = "Your New HP: " + player.getHealth() + "\n\n"      + "Your New Damage: " + player.getDamage() + "\n";
 
                                 //If you choose something that isn't in Choice
 /*static String*/ Else = "\nBecause you didn't choose a path that was available you will start your adventure again."
@@ -148,7 +150,8 @@ public void setPlayer(Player player) {
                                 //Special   (Code: 42069)
 /*static String*/ FourTwoZeroSixNine = "\nYou ask her for a Special Favour and Went to a near Hotel\n"      + "...\n"
                         + "After that she tells you, her Name and that she loves you and that she wants to go with you\n" 
-                        + "Her Name is " + player.getGirlName() + "."         + "\n\nAs next you go to a Bar " + player.getGirlName() + " knows\n\n\n"      + "Press Enter to Continue\n";
+                        + "\n(What is her Name?)\n";
+/*static String*/ FourTwoZeroSixNine2 = "\n\n***Her Name is " + player.getGirlName() + " now***\n\n"         + "\n\nAs next you go to a Bar " + player.getGirlName() + " knows\n\n\n"      + "Press Enter to Continue\n";
             
                                 //You Ignore Her and Die
 /*static String*/ Ignore = "You try to Sneak away but hit a bucket.\n"      + "The two guys hear it and Attack you\n"
@@ -211,7 +214,7 @@ public void setPlayer(Player player) {
 
 /*static String*/ Dead = "\n***You get revived and get a chance to survive by getting ported back to Pujins Bar.***\n";
 
-/*static String*/ WonSchwitler = "\nSchwitler: Oh, i thought you  are a Yoda.\n";
+/*static String*/ WonSchwitler = "\nSchwitler: Scheiße...\n"            + "         Uh... I mean, y have won, but that doesn't mean i'm not coming Back.\n";
 
 /*static String*/ run2 = "\n You run away and run into a man with yellow Hair.\n"
                         + player.getName() + ": Are you Donalt Trumpet the shitty leader of asmerika?\n"    + "Donalt Trumpet: Fake news, fake news mothafucka!\n"
