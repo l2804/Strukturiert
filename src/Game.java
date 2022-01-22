@@ -221,17 +221,18 @@ public class Game {
       }
          
       
-      public static void Bar() { // Bar with Hannah
+      public static void Bar() { // Bar with Girl  (East 1.1 & East 1.42069) (North 1.1)
             Main.animation(texte.Bar, 0);
+
       }
         
       
-      public static void Bar2() { // Bar Alone
+      public static void Bar2() { // Bar Alone  (West) (East 1.3) (North 1.2)
             Main.animation(texte.Bar2, 0);
       }
       
 
-      public static void BarDad() { // Bar of the Dad
+      public static void BarDad() { // Bar of the Dad     (East 1.2)
             Main.animation(texte.BarDad, 0);
 
                   //Set the Girls name
