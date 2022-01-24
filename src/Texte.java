@@ -15,7 +15,7 @@ public class Texte {
         //Bar Alone             (Paths = West, East 1.3, North 1.2)
         String Bar2;
         //Bar of the Dad        (Path = East 1.2)
-        String BarDad, BarDad2, BarDad3, ElseBarPujin, Dead, WonSchwitler, run2, wonTrumpet;
+        String BarDad, BarDad2, WodkaWodkaPutinBlyat, BarDadWon, BarDad3, ElseBarPujin, Dead, WonSchwitler, run2, wonTrumpet;
         
         
 
@@ -28,7 +28,7 @@ public void setPlayer(Player player) {
 
 intro = "Hello \n"
         + "Thank you for Playing my Game"
-        + "\nIn this Game you are playing a yourself, after you got portet into another world \n"
+        + "\nIn this Game you are playing yourself, after you got ported into another world \n"
         + "You will have to decide some choices, you can do that pressing a Showed Number.\n"
         + "Now Let's Start the Game :)\n\n"  
         + "------------------------------------------------------------------------------------------------------------------\n\n";
@@ -185,7 +185,7 @@ Bar =   "In the bar you get each a beer and talk\n\n"       + "" + player.getGir
 //Bar Alone
 Bar2 =  "\nYou go in a bar and order a drink.\n"       
         + "So, you Drink and start to think about what you are going to do next.\n"      + "\n" + player.getName() + ": What am I going to do?\n"
-        + "\n" + player.getName() + ": What can I do as an" + player.getAge() + " years old boy?\n";
+        + "\n" + player.getName() + ": What can I do as an " + player.getAge() + " years old boy?\n";
 
 
 
@@ -208,14 +208,21 @@ BarDad2 =       "\n***The girls Name is " + player.getGirlName() + "***\n"
                 + player.getName() + ": Yeah, that's me, nice to meet you ahh...\n"      + "Her dad: Wladimir, Wladimir Pujin.\n"
                 + player.getName() + ": Pujin, aren't you the president of Russia?\n"       + "Wladimir Pujin: Wait, you are from the Earth?\n"
                 + player.getName() + ": Yeah, I got ported her one Day ago.\n"      + "Wladimir Pujin: Oh, that's interesting.\n"      + player.getName() + ": And when did you get here.\n"
-                + "Wladimir Pujin: About years ago.\n"       + player.getName() + ": So, Wodka, Wodka, Putin, Blyat.\n"      + "\nPujin attacks you.\n" 
-                + "Pujins Health: 10\n"         + "\nWhat are you going to do?\n"
+                + "Wladimir Pujin: About years ago.\n"  + "\nWhat are you going to say?\n "
                 + "\n-----------------------------------------------------------------------------\n\n"
-                + "1: Attack him back\n"        + "2: Run away\n"
-                + "\n-----------------------------------------------------------------------------\n\n";
+                + "1: Wodka, Wodka, Putin, Blyat."      + "\n2: You are a great man.\n"
+                + "\n-----------------------------------------------------------------------------\n\n";     
+                
+WodkaWodkaPutinBlyat =  player.getName() + ": So, Wodka, Wodka, Putin, Blyat.\n"      + "\nPujin attacks you.\n" 
+                        + "Pujins Health: 10\n"         + "\nWhat are you going to do?\n"
+                        + "\n-----------------------------------------------------------------------------\n\n"
+                        + "1: Attack him back\n"        + "2: Run away\n"
+                        + "\n-----------------------------------------------------------------------------\n\n";
 
-BarDad3 =       "\nPujin: You won against me, you are a worthy Man for my daughter."    + player.getName() + ": Sorry, but I can't marry your daughter.\n"
-                + "\nI must find a way back home."    + "Pujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
+BarDadWon =     "\nPujin: You won against me.";
+
+BarDad3 =       "Pujin: You are a worthy Man for my daughter.\n"    + player.getName() + ": Sorry, but I can't marry your daughter.\n"
+                + "\nI must find a way back home."    + "\nPujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
                 + player.getName() + ": Ok, but if I find a way back home, I will let you here with your daughter.\n"    + player.getName() + ": Ok, but I'll get her back safe, I swear.\n";
 
 Run =   "\nYou try to run away." + "While you run Away you run into Adolf Schwitler.\n"
@@ -226,7 +233,7 @@ Run =   "\nYou try to run away." + "While you run Away you run into Adolf Schwit
 
 Dead =  "\n***You get revived and get a chance to survive by getting ported back to Pujins Bar.***\n";
 
-WonSchwitler =  "\nSchwitler: Scheiße...\n"            + "         Uh... I mean, y have won, but that doesn't mean I'm not coming Back.\n";
+WonSchwitler =  "\nSchwitler: Scheiße...\n"            + "Uh... I mean, you have won, but that doesn't mean I'm not coming Back.\n";
 
 run2 =  "\n You run away and run into a man with yellow Hair.\n"
         + player.getName() + ": Are you Donalt Trumpet the shitty leader of aAsmerika?\n"    + "Donalt Trumpet: Fake news, fake news mothafucka!\n"

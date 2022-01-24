@@ -70,6 +70,9 @@ public class Game {
                   }
 
                   else if (choice == 2) {
+                        player.setDamage(3);
+                        player.setHealth(10);
+                        player.setMoney(5);
                         story();
                   }
 
@@ -243,64 +246,77 @@ public class Game {
 
             Main.animation(texte.BarDad2, 0);
             choice = myScanner.nextInt();
-            
 
             if (choice == 1) {
-                  fight.Startfight(player, enemy, "Wladimir", "Pujin", "him");
-                  enterScanner.nextLine();
-                  Main.animation(texte.BarDad3, 0);
-            }
-
-            else if (choice == 2) {
-                  Main.animation(texte.Run, 0);
+                  Main.animation(texte.WodkaWodkaPutinBlyat, 0);
                   choice = myScanner.nextInt();
 
-
                   if (choice == 1) {
-                        enemy.setHealth(10);
-                        enemy.setDamage(5);
-                        fight.Startfight(player, enemy, "Adolf", "Schwitler", "him");
-
-                        if (player.getHealth() <= 0) {
-                              Main.animation(texte.Dead, 0);
-                              BarDad();
-                        }
-
-                        else if (player.getHealth() >= 1) {
-                              karma.setWonSchwitler(1);
-                              Main.animation(texte.WonSchwitler, 0);
-                        }
+                        fight.Startfight(player, enemy, "Wladimir", "Pujin", "him");
+                        enterScanner.nextLine();
+                        Main.animation(texte.BarDadWon, 0);
+                        PujinContinue();
                   }
-
+      
                   else if (choice == 2) {
-                        Main.animation(texte.run2, 0);
-                        enemy.setHealth(8);
-                        enemy.setDamage(3);
-                        enterScanner.nextLine();
-                        fight.Startfight(player, enemy, "Donalt", "Trumpet", "him");
-
-                        if (player.getHealth() < 1) {
-                              Main.animation(texte.Dead, 0);
+                        Main.animation(texte.Run, 0);
+                        choice = myScanner.nextInt();
+      
+      
+                        if (choice == 1) {
+                              enemy.setHealth(10);
+                              enemy.setDamage(5);
+                              fight.Startfight(player, enemy, "Adolf", "Schwitler", "him");
+      
+                              if (player.getHealth() <= 0) {
+                                    Main.animation(texte.Dead, 0);
+                                    BarDad();
+                              }
+      
+                              else if (player.getHealth() >= 1) {
+                                    karma.setWonSchwitler(1);
+                                    Main.animation(texte.WonSchwitler, 0);
+                              }
+                        }
+      
+                        else if (choice == 2) {
+                              Main.animation(texte.run2, 0);
+                              enemy.setHealth(8);
+                              enemy.setDamage(3);
+                              enterScanner.nextLine();
+                              fight.Startfight(player, enemy, "Donalt", "Trumpet", "him");
+      
+                              if (player.getHealth() < 1) {
+                                    Main.animation(texte.Dead, 0);
+                                    BarDad();
+                              }
+      
+                              else if (player.getHealth() > 0) {
+                                    Main.animation(texte.wonTrumpet, 0);
+                              }
+                        }
+      
+                        else {
+                              Main.animation(texte.ElseBarPujin, 0);
+                              enterScanner.nextLine();
                               BarDad();
                         }
-
-                        else if (player.getHealth() > 0) {
-                              Main.animation(texte.wonTrumpet, 0);
-                        }
-                  }
-
-                  else {
-                        Main.animation(texte.ElseBarPujin, 0);
-                        enterScanner.nextLine();
-                        BarDad();
                   }
             }
             
-            else{
+            else if (choice == 2) {
+                  PujinContinue();
+            }
+
+            else {
                   Main.animation(texte.ElseBarPujin, 0);
                   enterScanner.nextLine();
-                  BarDad();
+                  BarDad();  
             }
+      }
+
+      public static void PujinContinue() {
+            Main.animation(texte.BarDad3, 0);
       }
 
 }
