@@ -70,27 +70,5 @@ public class Player{
 
 
 
-    private String girlName;
-    private int girlAge = 18;
-
-
-     //set the player girlName
-     public void setGirlName(String girlName) {
-        this.girlName = girlName;
-    }
-    // Get the girlName
-    public String getGirlName() {
-        return girlName;
-    }
-
-    // set the player girlAge
-    public int getgirlAge() {
-        return girlAge;
-    }
-
-    //set the Player girlAge
-    public void setgirlAge(int i) {
-        girlAge = i;
-    }
-
+    
 }

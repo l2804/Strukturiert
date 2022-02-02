@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Game {
 
@@ -9,17 +10,21 @@ public class Game {
       public static Scanner nameScanner = new Scanner(System.in);
       public static Scanner ageScanner = new Scanner(System.in);
       public static String girlName;
+      public static String DoggoName;
       public static Player player = new Player();
+      public static Girl girl = new Girl();
+      public static Doggo doggo = new Doggo();
       public static Enemy enemy = new Enemy();
       public static Karma karma = new Karma();
       public static Fight fight;
       public static Texte texte = new Texte();
-
+      public static Random rand = new Random();
+      public static int FindDoggo = rand.nextInt(3);
       
       
 
       public static void startGame(Game game) {
-            texte.setPlayer(player);
+            texte.setPlayer(player, doggo, girl);
             story();
       }
 
@@ -31,7 +36,8 @@ public class Game {
                   Main.animation(texte.Name1, 0);
                   String name = nameScanner.next();
                   player.setName(name);
-                  texte.setPlayer(player);
+                  texte.setPlayer(player, doggo, girl);
+                  
 
                   Main.animation(texte.Name2, 0);
 
@@ -39,7 +45,7 @@ public class Game {
                   Main.animation(texte.Age1, 0);
                   Age = ageScanner.nextInt();
                   player.setAge(Age);
-                  texte.setPlayer(player);
+                  texte.setPlayer(player, doggo, girl);
                   Main.animation(texte.Age2, 0);
 
             //Real Start
@@ -70,9 +76,6 @@ public class Game {
                   }
 
                   else if (choice == 2) {
-                        player.setDamage(3);
-                        player.setHealth(10);
-                        player.setMoney(5);
                         story();
                   }
 
@@ -165,8 +168,8 @@ public class Game {
 
                               //Set the Girls name
                               String girlName = nameScanner.next();
-                              player.setGirlName(girlName);
-                              texte.setPlayer(player);
+                              girl.setGirlName(girlName);
+                              texte.setPlayer(player, doggo, girl);
 
                         Main.animation(texte.JoinEast2, 0);
                         enterScanner.nextLine();
@@ -175,7 +178,6 @@ public class Game {
 
                   else if (choice == 2) {
                         Main.animation(texte.Money, 0);
-                        enterScanner.nextLine();
                         BarDad();
                   }
 
@@ -190,8 +192,8 @@ public class Game {
 
                               //Set the Girls name
                               String girlName = nameScanner.next();
-                              player.setGirlName(girlName);
-                              texte.setPlayer(player);
+                              girl.setGirlName(girlName);
+                              texte.setPlayer(player, doggo, girl);
 
                         Main.animation(texte.FourTwoZeroSixNine2, 0);
                         enterScanner.nextLine();
@@ -240,8 +242,8 @@ public class Game {
 
                   //Set the Girls name
                   String girlName = nameScanner.next();
-                  player.setGirlName(girlName);
-                  texte.setPlayer(player);
+                  girl.setGirlName(girlName);
+                  texte.setPlayer(player, doggo, girl);
 
 
             Main.animation(texte.BarDad2, 0);
@@ -276,6 +278,7 @@ public class Game {
                               else if (player.getHealth() >= 1) {
                                     karma.setWonSchwitler(1);
                                     Main.animation(texte.WonSchwitler, 0);
+                                    RandomDog();
                               }
                         }
       
@@ -293,6 +296,7 @@ public class Game {
       
                               else if (player.getHealth() > 0) {
                                     Main.animation(texte.wonTrumpet, 0);
+                                    RandomDog();
                               }
                         }
       
@@ -302,9 +306,16 @@ public class Game {
                               BarDad();
                         }
                   }
+
+                  else {
+                        Main.animation(texte.ElseBarPujin, 0);
+                        enterScanner.nextLine();
+                        BarDad();
+                  }
             }
             
             else if (choice == 2) {
+                  Main.animation(texte.BarDadGood, 0);
                   PujinContinue();
             }
 
@@ -317,6 +328,25 @@ public class Game {
 
       public static void PujinContinue() {
             Main.animation(texte.BarDad3, 0);
+            RandomDog();
+      }
+
+      public static void RandomDog(){
+
+            if (FindDoggo == 1) {
+                  Main.animation(texte.FindDoggo, 0);
+
+                  //Set the Dogs name
+                  String doggoName = nameScanner.next();
+                  doggo.setDoggoName(doggoName);
+                  texte.setPlayer(player, doggo, girl);
+
+                  Main.animation(texte.FindDoggo2, 0);
+            }
+
+            if (FindDoggo == 2) {
+                  Main.animation(texte.FindDoggoNot, 0);
+            }
       }
 
 }

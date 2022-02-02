@@ -1,7 +1,9 @@
 public class Texte {
 
-        
         Player player = new Player();
+        Girl girl = new Girl();
+        Doggo doggo = new Doggo();
+
         //Intro
         String intro, Name1, Name2, Age1, Age2, Intro2, Attack, Run, Run2, God, NewStats, Else;
         //North
@@ -15,12 +17,15 @@ public class Texte {
         //Bar Alone             (Paths = West, East 1.3, North 1.2)
         String Bar2;
         //Bar of the Dad        (Path = East 1.2)
-        String BarDad, BarDad2, WodkaWodkaPutinBlyat, BarDadWon, BarDad3, ElseBarPujin, Dead, WonSchwitler, run2, wonTrumpet;
-        
+        String BarDad, BarDad2, WodkaWodkaPutinBlyat, BarDadGood, BarDadWon, BarDad3, ElseBarPujin, Dead, WonSchwitler, run2, wonTrumpet;
+        //Doggo
+        String FindDoggo, FindDoggo2, FindDoggoNot;
         
 
-public void setPlayer(Player player) {
+public void setPlayer(Player player, Doggo doggo, Girl girl) {
         this.player = player;
+        this.doggo = doggo;
+        this.girl = girl;
 
 
 
@@ -74,7 +79,7 @@ NewStats = "Your New HP: " + player.getHealth() + "\n\n"      + "Your New Damage
 
 //If you choose something that isn't in Choice
 Else =  "\nBecause you didn't choose a path that was available you will start your adventure again."
-        + "n\nPlease Press Enter to Continue.";
+        + "n\n(Please Press Enter to Continue.)";
 
 
 //North
@@ -97,7 +102,7 @@ Help =  "\nYou are heading to the Woman.\n"       + "You attack the robbers and 
                         
 //You ask her to join you
 joinNorth =     "\nYou ask her to join you on your journey.\n"          + "...\nBut first you ask her for her Name.\n"
-                + "\nHer name is " + player.getGirlName() + "\n"      + "\nAs next you go to a Bar " + player.getGirlName() + " knows.\n"
+                + "\nHer name is " + girl.getGirlName() + "\n"      + "\nAs next you go to a Bar " + girl.getGirlName() + " knows.\n"
                 + "Press Enter to Continue\n";
                         
 //You Don't ask for anything
@@ -114,7 +119,7 @@ Ignore =        "\nYou are trying to ignore her and walk besides them\n"
                         
 //If you choose something that isn't in Choice
 ElseNorth =     "\nBecause you didn't choose a path that was available you will start again from the North."
-                + "\n\nPlease Press Enter to Continue.";
+                + "\n\n(Please Press Enter to Continue.)";
 
 
 //East
@@ -139,13 +144,13 @@ Attack =        "You attack the two guys with Excalibur\n"        + "You hit bot
  //You ask her to Join you
 JoinEast =      "You ask her to Join you.\n"       + "... She says Yes.\n\n"
                 + "First you ask her for her Name...\n\n"       + "\n(What is her Name?)\n";
-JoinEast2 =     "She says that her Name is " + player.getGirlName() + "."      + "Press Enter to Continue\n"
-                + "\nAs next you go to a Bar " + player.getGirlName() + " knows\n\n"      + "Press Enter to Continue\n\n";
+JoinEast2 =     "She says that her Name is " + girl.getGirlName() + "."      + "Press Enter to Continue\n"
+                + "\nAs next you go to a Bar " + girl.getGirlName() + " knows\n\n"      + "Press Enter to Continue\n\n";
            
 //You ask her for Money
 Money =         "You ask the Girl for some Money\n" 
                 + "...\nBut the girl says that she doesn't have any money at her.\n"
-                + "\nSo, you head to the bar of her dad.\n"      + "\nPress Enter to Continue\n\n";
+                + "\nSo, you head to the bar of her dad.\n";
             
 //You ask for Nothing
 Nothing =       "\nYou ask for nothing.\n"      + "The Girl thanks you Gratefully and goes home.\n"
@@ -156,7 +161,7 @@ FourTwoZeroSixNine =    "\nYou ask her for a Special Favour and Went to a near h
                         + "After that she tells you, her Name and that she loves you and that she wants to go with you\n" 
                         + "\n(What is her Name?)\n";
 
-FourTwoZeroSixNine2 =   "\n\n***Her Name is " + player.getGirlName() + " now***\n\n"         + "\n\nAs next you go to a Bar " + player.getGirlName() + " knows\n\n\n"      + "Press Enter to Continue\n";
+FourTwoZeroSixNine2 =   "\n\n***Her Name is " + girl.getGirlName() + " now***\n\n"         + "\n\nAs next you go to a Bar " + girl.getGirlName() + " knows\n\n\n"      + "Press Enter to Continue\n";
             
 //You Ignore Her and Die
 Ignore =        "You try to Sneak away but hit a bucket.\n"      + "The two guys hear it and Attack you\n"
@@ -164,12 +169,12 @@ Ignore =        "You try to Sneak away but hit a bucket.\n"      + "The two guys
 
 //If you choose something that isn't in Choice
 ElseEast =      "\nBecause you didn't choose a path that was available you will start again from the East."
-                + "\n\nPlease Press Enter to Continue.";
+                + "\n\n(Please Press Enter to Continue)";
 
 //West
 
-West =  "You walked to the West\n" + "There is a bar." 
-        + "\n\nSo, you Head to the bar to get some Information about this new World." + "\n\nPress Enter to Continue";
+West =  "You walked to the West\n" + "\nThere is a bar." 
+        + "\n\nSo, you Head to the bar to get some Information about this new World." + "\n\n(Press Enter to Continue)";
 
 
 
@@ -177,8 +182,8 @@ West =  "You walked to the West\n" + "There is a bar."
 
                         
 //Bar with a Girl/Women
-Bar =   "In the bar you get each a beer and talk\n\n"       + "" + player.getGirlName() + ": So, I am 18 years old, and you?\n\n"
-        + "You tell her, that you are" + player.getAge() + " years old\n"         + "" + player.getGirlName() + ":" + player.getAge() + ", huh.\n...That's a great age.\n";
+Bar =   "In the bar you get each a beer and talk\n\n"       + "" + girl.getGirlName() + ": So, I am 18 years old, and you?\n\n"
+        + "You tell her, that you are" + player.getAge() + " years old\n"         + "" + girl.getGirlName() + ":" + player.getAge() + ", huh.\n...That's a great age.\n";
 
 
 
@@ -193,19 +198,19 @@ Bar2 =  "\nYou go in a bar and order a drink.\n"
 BarDad =        "\nAt the Bar of her Dad you sit down at a table and talk until her dad comes.\n"
                 + "\nAt first the girl tells you her name and you tell her yours.\n\n"  +       "\n(What is the girls Name?)\n";  
 
-BarDad2 =       "\n***The girls Name is " + player.getGirlName() + "***\n"
-                + "\nSo, you start to talk.\n"       + "\n" + player.getGirlName() + ": So, I'm 17, how old are you?\n"         + "You answer,that you are" + player.getAge() + " years old"
-                + "" + player.getGirlName() + ":" + player.getAge() + " huh, that's great.\n"         + "" + player.getGirlName() + ": Sooo, what are we going to do after my dad comes?\n"
+BarDad2 =       "\n***The girls Name is " + girl.getGirlName() + "***\n"
+                + "\nSo, you start to talk.\n"       + "\n" + girl.getGirlName() + ": So, I'm 17, how old are you?\n"         + "You answer,that you are" + player.getAge() + " years old"
+                + "" + girl.getGirlName() + ":" + player.getAge() + " huh, that's great.\n"         + "" + girl.getGirlName() + ": Sooo, what are we going to do after my dad comes?\n"
                 + "You tell her that you are going to look for a guilt or something\nand fight some Monsters for Money.\n"
-                + "" + player.getGirlName() + ": And where's my part in that plan?\n"         + player.getName() + ": Your Part???\n" + "" + player.getGirlName() + ": Yeah, I thought I would come with you.\n"
+                + "" + girl.getGirlName() + ": And where's my part in that plan?\n"         + player.getName() + ": Your Part???\n" + "" + girl.getGirlName() + ": Yeah, I thought I would come with you.\n"
                 + player.getName() + ": I mean, if you want to, but it can be hard, especially for a young Girl like you.\n" 
-                + "" + player.getGirlName() + ": Especially for a young girl like me???\n"      + player.getName() + ": Yeah?!"
-                + "" + player.getGirlName() + ": I'm an adult!!! I Should just been married one year ago.\n"       + player.getName() + ": Is that? How old does the people here become?\n"
-                + "" + player.getGirlName() + ": The oldest people I know became 30.\n"       + player.getName() + ": Really???\n"
-                + "" + player.getGirlName() + ": Don't tell me you didn't know that the average age is 28.\n"         + player.getName() + ": Sure, I did know that I'm not dumb, zh.\n"
-                + "(WTF, does that mean I'm old in this world?)\n"      + "" + player.getGirlName() + ": Oh, good, that's really good.\n"        + "\n\n"
-                +  "After a While the dad comes.\n"         + "\nHer dad: Hey, you must be the young man who saved my daughter.\n"
-                + player.getName() + ": Yeah, that's me, nice to meet you ahh...\n"      + "Her dad: Wladimir, Wladimir Pujin.\n"
+                + "" + girl.getGirlName() + ": Especially for a young girl like me???\n"      + player.getName() + ": Yeah?!"
+                + "" + girl.getGirlName() + ": I'm an adult!!! I Should just been married one year ago.\n"       + player.getName() + ": Is that? How old does the people here become?\n"
+                + "" + girl.getGirlName() + ": The oldest people I know became 30.\n"       + player.getName() + ": Really???\n"
+                + "" + girl.getGirlName() + ": Don't tell me you didn't know that the average age is 28.\n"         + player.getName() + ": Sure, I did know that I'm not dumb, zh.\n"
+                + "(WTF, does that mean I'm old in this world?)\n"      + "" + girl.getGirlName() + ": Oh, good, that's really good.\n"        + "\n\n"
+                +  "After a While the dad comes.\n"         + girl.getGirlName() + "'s dad: Hey, you must be the young man who saved my daughter.\n"
+                + player.getName() + ": Yeah, that's me, nice to meet you ahh...\n"      + girl.getGirlName() + "'s dad: Wladimir, Wladimir Pujin.\n"
                 + player.getName() + ": Pujin, aren't you the president of Russia?\n"       + "Wladimir Pujin: Wait, you are from the Earth?\n"
                 + player.getName() + ": Yeah, I got ported her one Day ago.\n"      + "Wladimir Pujin: Oh, that's interesting.\n"      + player.getName() + ": And when did you get here.\n"
                 + "Wladimir Pujin: About years ago.\n"  + "\nWhat are you going to say?\n "
@@ -219,10 +224,12 @@ WodkaWodkaPutinBlyat =  player.getName() + ": So, Wodka, Wodka, Putin, Blyat.\n"
                         + "1: Attack him back\n"        + "2: Run away\n"
                         + "\n-----------------------------------------------------------------------------\n\n";
 
+BarDadGood = player.getName() + ": You are a great ruler Pujin." + "\nPujin: Thank you.\n";
+
 BarDadWon =     "\nPujin: You won against me.";
 
-BarDad3 =       "Pujin: You are a worthy Man for my daughter.\n"    + player.getName() + ": Sorry, but I can't marry your daughter.\n"
-                + "\nI must find a way back home."    + "\nPujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
+BarDad3 =       "Pujin: You are a worthy Man for my daughter.\n"    + player.getName() + ": Sorry, but I can't marry your daughter"
+                + ", I have to find a way back home."    + "\nPujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
                 + player.getName() + ": Ok, but if I find a way back home, I will let you here with your daughter.\n"    + player.getName() + ": Ok, but I'll get her back safe, I swear.\n";
 
 Run =   "\nYou try to run away." + "While you run Away you run into Adolf Schwitler.\n"
@@ -241,9 +248,26 @@ run2 =  "\n You run away and run into a man with yellow Hair.\n"
 
 wonTrumpet =    "\n\nDonald Trumpet: Ok you won, but only because you counted wrong, I want a new election\n";
 
-ElseBarPujin  = "\nBecause you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.\n"
-                + "\nPress Enter to Continue";
+ElseBarPujin =  "\nBecause you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.\n"
+                + "\n(Press Enter to Continue)\n";
 
 
+
+
+
+
+
+
+                // Dog or No Dog, that's the question
+
+FindDoggo =     "\nAs next you are going outside of the Bar and Find a Dog.\n\n"  + player.getName() + ": Hey, " + girl.getGirlName() + " do you know this dog?\n"
+                + girl.getGirlName() + ": No, I don't, why?\n"        + player.getName() + ": I was thinking about, that it would be Cool to have a Dog.\n"
+                + girl.getGirlName() + ": You mean, that we should adopt this Dog?\n"         + player.getName() + ": Yeah, I mean if don't mind it?!\n"
+                + girl.getGirlName() + ": No, I dont mind, but what should we name it, then?\n"       + player.getName() + ": That's a good question.\n" 
+                + "\n(What would you like to call the Dog?)\n";
+
+FindDoggo2 =    "\n(The Dogs name is " + doggo.getdoggoName() + " now.)";
+
+FindDoggoNot = "\nNo\n";
 }
 }
