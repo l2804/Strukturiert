@@ -48,6 +48,14 @@ public class Game {
                   texte.setPlayer(player, doggo, girl);
                   Main.animation(texte.Age2, 0);
 
+                        if ((player.getAge() == 69 || player.getAge() == 420 || player.getAge() == 42069 || player.getAge() == 69420) && (player.getName().equals("Wladimir") || player.getName().equals("Putin") )) {
+                              Main.animation(texte.Nice, 0);
+                              player.setDamage(5);
+                              player.setHealth(15);
+                              player.setMoney(10);
+                              Main.animation(texte.NewStats, 0);
+                        }
+
             //Real Start
             Main.animation(texte.Intro2, 0);
             choice = myScanner.nextInt();
