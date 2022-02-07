@@ -5,7 +5,7 @@ public class Texte {
         Doggo doggo = new Doggo();
 
         //Intro
-        String Nice, intro, Name1, Name2, Age1, Age2, Intro2, Attack, Run, Run2, God, NewStats, Else;
+        String Nice, intro, Name1, Name2, lastName1, Age1, Age2, Intro2, Attack, Run, Run2, God, NewStats, Else;
         //North
         String North, Help, joinNorth, DeadEnd, Back, Ignore, ElseNorth;
         //East
@@ -42,9 +42,11 @@ intro = "Hello \n"
         + "------------------------------------------------------------------------------------------------------------------\n\n";
 
 
-        
+
 Name1 = "\nPlease Enter your name.\n";
-Name2 = "\n\n***Your name is " + player.getName() + " now***\n\n";
+Name2 = "\n\n***Your name is " + player.getName() + " " + player.getLastName() + " now***\n\n";
+
+lastName1 = "\nPlease enter your Last Name.\n";
 
 
 
@@ -55,7 +57,7 @@ Age2 =  "\n***Your age is " + player.getAge() + " now***\n";
 
 Intro2 = "In the beginning of our Story you spawn in the woods after you got teleported from your world.\n"
         + "You are Standing up, and see a Sword called Excalibur in your right hand.\n"
-        + "You can also see, that your HP is 10 at a bar on the top of your view."
+        + "You can also see, that your HP is" + player.getHealth() + " at a bar on the top of your view."
         + "But you don't have the time to think about it, because a Goblin lord jumps right in front of you.\n"
         + "So, what are you going to do?\n\n"
         + "-------------------------------------------------------------------------------------------------------------------\n\n"
@@ -92,7 +94,7 @@ God =   "\nCongrats, you touch a god rock and get the powers of a god\n"
 
 
 
-NewStats = "Your New HP: " + player.getHealth() + "\n\n"      + "Your New Damage: " + player.getDamage() + "\n";
+NewStats = "Your New HP: " + player.getHealth() + "\n"      + "Your New Damage: " + player.getDamage() + "\n";
 
 
 

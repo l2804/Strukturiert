@@ -37,6 +37,15 @@ public class Game {
                   String name = nameScanner.next();
                   player.setName(name);
                   texte.setPlayer(player, doggo, girl);
+
+                  Main.animation(texte.lastName1, 0);
+                  String lastName = nameScanner.next();
+                  player.setLastName(lastName);
+                  texte.setPlayer(player, doggo, girl);
+
+                  if ( ( player.getName().equals("Deine") ) && (player.getLastName().equals("Mutter") || player.getLastName().equals("Mudda") ) ) {
+                        System.out.println("\nSelber deine Mutter du Hs.\n");
+                  }
                   
 
                   Main.animation(texte.Name2, 0);
@@ -53,6 +62,7 @@ public class Game {
                               player.setDamage(5);
                               player.setHealth(15);
                               player.setMoney(10);
+                              texte.setPlayer(player, doggo, girl);
                               Main.animation(texte.NewStats, 0);
                         }
 
@@ -284,7 +294,7 @@ public class Game {
                               }
       
                               else if (player.getHealth() >= 1) {
-                                    karma.setWonSchwitler(1);
+                                    karma.setWonSchwitler(2);
                                     Main.animation(texte.WonSchwitler, 0);
                                     RandomDog();
                               }
@@ -350,10 +360,12 @@ public class Game {
                   texte.setPlayer(player, doggo, girl);
 
                   Main.animation(texte.FindDoggo2, 0);
+                  karma.setFindDoggo(2);
             }
 
             if (FindDoggo == 2) {
                   Main.animation(texte.FindDoggoNot, 0);
+                  karma.setFindDoggo(1);
             }
       }
 

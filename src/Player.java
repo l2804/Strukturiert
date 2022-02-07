@@ -7,6 +7,7 @@ public class Player{
     private int damage = 3;
     private int age = 18;
     private String name;
+    private String lastName; 
 
     // set the player Age
     public int getAge() {
@@ -65,6 +66,14 @@ public class Player{
 
     public String getName() {
         return name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
 
