@@ -1,4 +1,5 @@
-package Anderes;
+
+
 public class Girl extends Player{
     private String girlName;
     private int girlAge = 18;

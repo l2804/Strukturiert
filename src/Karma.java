@@ -1,4 +1,4 @@
-package Anderes;
+
 public class Karma {
 
     private int WonSchwitler = 1;

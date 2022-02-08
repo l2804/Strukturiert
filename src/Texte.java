@@ -1,4 +1,3 @@
-package Anderes;
 public class Texte {
 
         Player player = new Player();
