@@ -1,3 +1,4 @@
+package Anderes;
 import java.util.Scanner;
 
 public class Fight {

@@ -1,3 +1,4 @@
+package Anderes;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -57,7 +58,7 @@ public class Game {
                   texte.setPlayer(player, doggo, girl);
                   Main.animation(texte.Age2, 0);
 
-                        if ((player.getAge() == 69 || player.getAge() == 420 || player.getAge() == 42069 || player.getAge() == 69420) && (player.getName().equals("Wladimir") || player.getName().equals("Putin") )) {
+                        if ((player.getAge() == 69 || player.getAge() == 420 || player.getAge() == 42069 || player.getAge() == 69420) && (player.getLastName().equals("Wladimir") || player.getName().equals("Putin") )) {
                               Main.animation(texte.Nice, 0);
                               player.setDamage(5);
                               player.setHealth(15);

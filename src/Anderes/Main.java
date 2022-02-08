@@ -1,3 +1,4 @@
+package Anderes;
 public class Main {
     int time;
     public static void animation(String text,int time) {

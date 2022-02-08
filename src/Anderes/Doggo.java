@@ -1,3 +1,4 @@
+package Anderes;
 public class Doggo extends Player {
     private String doggoName;
 
