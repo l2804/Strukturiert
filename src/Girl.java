@@ -1,7 +1,5 @@
-
-
 public class Girl extends Player{
-    private String girlName;
+    private String girlName = "Maria - Lisa";
     private int girlAge = 18;
 
 
@@ -24,4 +22,6 @@ public class Girl extends Player{
     public void setgirlAge(int i) {
         girlAge = i;
     }
+
+    
 }

@@ -5,7 +5,7 @@ public class Texte {
         Doggo doggo = new Doggo();
 
         //Intro
-        String Nice, intro, Name1, Name2, lastName1, Age1, Age2, Intro2, Attack, Run, Run2, God, NewStats, Else;
+        String Nice, intro, Name1, Name2, lastName1, Age1, Age2, getFullName, Intro2, Attack, Run, Run2, God, NewStats, Else;
         //North
         String North, Help, joinNorth, DeadEnd, Back, Ignore, ElseNorth;
         //East
@@ -47,7 +47,6 @@ Name1 = "\nPlease Enter your name.\n";
 Name2 = "\n\n***Your name is " + player.getName() + " " + player.getLastName() + " now***\n\n";
 
 lastName1 = "\nPlease enter your Last Name.\n";
-
 
 
 Age1 =  "\nPlease enter your Age, too.\n";
@@ -279,7 +278,7 @@ WodkaWodkaPutinBlyat =  player.getName() + ": So, Wodka, Wodka, Putin, Blyat.\n"
 
 
 
-BarDadGood = player.getName() + ": You are a great ruler Pujin." + "\nPujin: Thank you.\n";
+BarDadGood =    player.getName() + ": You are a great ruler Pujin." + "\nPujin: Thank you.\n";
 
 
 
@@ -341,6 +340,6 @@ FindDoggo2 =    "\n(The Dogs name is " + doggo.getdoggoName() + " now.)";
 
 
 
-FindDoggoNot = "\nNo\n";
+FindDoggoNot =  "\nNo\n";
 }
 }
