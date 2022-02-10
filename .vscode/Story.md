@@ -1,4 +1,4 @@
-### Story
+# Story
 
 ## Intro (Intro – Crossroad)
 
@@ -13,11 +13,12 @@ Selber deine Mutter du Hs.
 
 ***Your Last name is (Playerlastname) now***
 Please enter your Age, too
+
 (Player Enters Age)
 ***Your age is (Playerage) now***
 
 
-### Wenn Player age (420 / 69 / 42069 / 69420) und Playername (Wladimir) oder Playerlastname (Putin)
+## Wenn Player age (420 / 69 / 42069 / 69420) und Playername (Wladimir) oder Playerlastname (Putin)
 Nice I like that, and because of that i'll give you a boost.
 player.setDamage(5)
 player.setHealth(15)
@@ -38,15 +39,15 @@ You are Standing up, and see a Sword called Excalibur in your right hand.
 You can also see, that your HP is 10 at a bar on the top of your view.
 But you don't have the time to think about it, because a Goblin lord jumps right in front of you.
 So, what are you going to do?
--------------------------------------------------------------------------------------------------------------------
-1: Attack him	2: Run away and search for a village
--------------------------------------------------------------------------------------------------------------------
+
+***1: Attack him	2: Run away and search for a village***
+
 
 
 (You attack The Goblin Lord    (Code 1))
 You attacked The Goblin Lord...
 ...But he is much stronger than you and kills you with one hit. 
-YOU ARE DEAD
+***YOU ARE DEAD***
 Please try again
 Press Enter to go back to the beginning
 
@@ -57,9 +58,9 @@ After two hours of walking, you reach a big town.
 You walk in the Town and walk up to a crossroad.
 You came from the South side
 What are you going to do?
--------------------------------------------------------------------------------------------------------------------
-1: Go North	2: Go East\n	3: Go West
--------------------------------------------------------------------------------------------------------------------
+
+***1: Go North	2: Go East\n	3: Go West***
+
 
 (You are GOD   (Code: 2804))
 
@@ -85,15 +86,15 @@ Please Press Enter to Continue
 
 
 
-## (North)
+# North
 
 You walked to the North
 On the road you walk along is an old woman who is getting attacked by some thieves.
 So, the woman asks for your help. 
 What are you going to do?
-----------------------------------------------------------------------------------------------------------------
-1: Help her	2: Go back to the Crossroad	3: Don't help her
-----------------------------------------------------------------------------------------------------------------
+
+***1: Help her	2: Go back to the Crossroad	3: Don't help her***
+
 
 (You help the Woman)
 
@@ -102,10 +103,10 @@ You are heading to the Woman.
 The Robbers fall and knock out
 The woman thanks you and asks, what she can do for you.
 What can she do for you?
---------------------------------------------------------------------------------------------------------
-1: Ask her to Join you on your journey
-2: Don't ask for anything.
----------------------------------------------------------------------------------------------------------
+
+***1: Ask her to Join you on your journey
+2: Don't ask for anything.***
+
 
 (You ask her to join you)
 
@@ -151,7 +152,7 @@ Please Press Enter to Continue.
 
 
 
-(East)
+# East
 
 You walked to the East
 You see a small alley
@@ -159,9 +160,9 @@ In this alley there are a girl and two Men
 The two men are robbing the girl and trying to undress her.
 But you can hear the girl scream: Stop!
  What are you going to do?
---------------------------------------------------------------------------------------------------------
-1: Attack the guys with Excalibur		2: Ignore it and go away Silent
---------------------------------------------------------------------------------------------------------
+
+***1: Attack the guys with Excalibur		2: Ignore it and go away Silent***
+
 
 (You attack the guys)
 
@@ -170,10 +171,10 @@ You hit both with Excalibur and they fall.
 Next you get both guys and bind them together.
 The girl thanks you and asks what she can do for you.
 What are you going to ask for?
---------------------------------------------------------------------------------------------------------
-1: Ask her to Join you on your journey	 2: Just ask her for some Money.
- 3: Don't ask for anything
---------------------------------------------------------------------------------------------------------
+
+***1: Ask her to Join you on your journey	 2: Just ask her for some Money.
+3: Don't ask for anything***
+
 
 
 
@@ -206,7 +207,7 @@ You ask for Nothing.
 The Girl thanks you Gratefully and goes home.
 So you are going to a Bar to relax after that day.
  
-Press Enter to continue
+***Press Enter to continue***
 
 
 
@@ -229,7 +230,7 @@ Press Enter to Continue
 
 You try to Sneak away but hit a bucket.
 The two guys hear it and attack you
-YOU ARE DEAD
+***YOU ARE DEAD***
 Please try again.
 Press Enter to go back to the beginning
 
@@ -244,7 +245,7 @@ Please Press Enter to Continue.
 
 
 
-## (West)
+# (West)
 
 You walked to the West
 There is a bar
@@ -278,10 +279,10 @@ So, you Head to the bar to get some Information about this new World.
 
 
 
-## (Bars)
+# (Bars)
 
 
-# (Bar with a Girl/Women (Bar))
+## (Bar with a Girl/Women (Bar))
 
 In the bar you get each a beer and talk
 …: So, I am 18 years old, and you?
@@ -291,7 +292,7 @@ You tell her, that you are … years old
 
 
 
-# (Bar Alone)
+## (Bar Alone)
 
 You go in a bar and order a drink.
 So, you Drink and start to think about what you are going to do next.
@@ -300,7 +301,7 @@ You: What can I do as an (Playerage) years old boy?
 
 
 
-# (Bar of her dad after you ask her For Money)
+## (Bar of her dad after you ask her For Money)
 
 At the Bar of her Dad you sit down at a table and talk until her dad comes.
 At first the girl tells you her name and you tell her yours.
@@ -311,8 +312,8 @@ At first the girl tells you her name and you tell her yours.
 ***The girls Name is (Girlname) now***
 So, you start to talk.
 Girl: So, I'm 17, how old are you?
- You answer that you are (Girlname) years old
-Girl: (Playerage) huh, that's great.
+ You answer that you are **(Girlname)** years old
+Girl: **(Playerage)** huh, that's great.
 Girl: Soo, what are we going to do after my dad comes?
 You tell her that you are going to look for a guilt or something and fight some Monsters for Money.
 Girl: And where's my part in that plan?
@@ -341,18 +342,18 @@ You: And when did you get here.
 Wladimir Pujin: About years ago.    
 
 (What are you Going to ask?)
------------------------------------------------------------------------------
-1: Wodka, Wodka, Putin, Blyat	 2: you are a great Ruler
------------------------------------------------------------------------------
+
+***1: Wodka, Wodka, Putin, Blyat	 2: you are a great Ruler***
+
 
 (If Choice 1)
 You: So, Wodka, Wodka, Putin, Blyat.
 Pujin attacks you.
 Pujins Health: 10
  What are you going to do?
------------------------------------------------------------------------------
-1: Attack him back	2: Run away
------------------------------------------------------------------------------
+-
+***1: Attack him back	2: Run away***
+
 (After you fight him and Win)
 Pujin: You won against me.
 
@@ -370,9 +371,9 @@ You try to run away.
 While you run Away you run into Adolf Schwitler.
 He Attacks you.
 (What are you going to do?)
------------------------------------------------------------------------------
-1: Attack him	2: Run away
------------------------------------------------------------------------------
+
+***1: Attack him	2: Run away***
+
 
 (You fight Schwitler and Lose)
 
