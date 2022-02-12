@@ -1,8 +1,8 @@
 
 public class Karma {
 
-    private int WonSchwitler = 1;
-    private int FindDoggo = 1;
+    private int WonSchwitler = 1; //(2 Wenn  Schwitler als Endboss auftauchen soll)
+    private int FindDoggo = 1; //(2 Wenn du den Hund Gefunden Hast)
 
     // set the Schwitler Karma
     public int Wonschwitler() {

@@ -11,7 +11,7 @@ public class Doggo extends Player {
         this.doggoName = doggoName;
     }
     // Get the Dogs Name
-    public String getdoggoName() {
+    public String getDoggoName() {
         return doggoName;
     }
 }
