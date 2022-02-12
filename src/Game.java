@@ -32,6 +32,7 @@ public class Game {
 
       public static void story() {
             Main.animation(texte.intro, 0);
+            BreakLine();
 
                   //Set Name
                   Main.animation(texte.Name1, 0);
@@ -69,6 +70,9 @@ public class Game {
 
             //Real Start
             Main.animation(texte.Intro2, 0);
+            BreakLine();
+            Main.animation(texte.Intro3, 0);
+            BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
@@ -116,6 +120,9 @@ public class Game {
       
       public static void Crossroad(){
             Main.animation(texte.Run2, 0);
+            BreakLine();
+            Main.animation(texte.Run3, 0);
+            BreakLine();
             choice = myScanner.nextInt();
 
             switch(choice) {
@@ -129,10 +136,16 @@ public class Game {
             
       public static void North() {
             Main.animation(texte.North, 0);
+            BreakLine();
+            Main.animation(texte.North2, 0);
+            BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
                   Main.animation(texte.Help, 0);
+                  BreakLine();
+                  Main.animation(texte.Help2, 0);
+                  BreakLine();
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
@@ -176,10 +189,16 @@ public class Game {
 
       public static  void East() {
             Main.animation(texte.East, 0);
+            BreakLine();
+            Main.animation(texte.East2, 0);
+            BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
-                  Main.animation(texte.Attack, 0);
+                  Main.animation(texte.AttackEast, 0);
+                  BreakLine();
+                  Main.animation(texte.AttackEast2, 0);
+                  BreakLine();
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
@@ -266,10 +285,16 @@ public class Game {
 
 
             Main.animation(texte.BarDad2, 0);
+            BreakLine();
+            Main.animation(texte.BarDad3, 0);
+            BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
                   Main.animation(texte.WodkaWodkaPutinBlyat, 0);
+                  BreakLine();
+                  Main.animation(texte.WodkaWodkaPutinBlyat2, 0);
+                  BreakLine();
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
@@ -280,7 +305,10 @@ public class Game {
                   }
       
                   else if (choice == 2) {
-                        Main.animation(texte.Run, 0);
+                        Main.animation(texte.RunSchwitler1, 0);
+                        BreakLine();
+                        Main.animation(texte.RunSchwitler2, 0);
+                        BreakLine();
                         choice = myScanner.nextInt();
       
       
@@ -297,12 +325,12 @@ public class Game {
                               else if (player.getHealth() >= 1) {
                                     karma.setWonSchwitler(2);
                                     Main.animation(texte.WonSchwitler, 0);
-                                    RandomDog();
+                                    PujinContinue();
                               }
                         }
       
                         else if (choice == 2) {
-                              Main.animation(texte.run2, 0);
+                              Main.animation(texte.RunTrumpet, 0);
                               enemy.setHealth(8);
                               enemy.setDamage(3);
                               enterScanner.nextLine();
@@ -315,7 +343,7 @@ public class Game {
       
                               else if (player.getHealth() > 0) {
                                     Main.animation(texte.wonTrumpet, 0);
-                                    RandomDog();
+                                    PujinContinue();
                               }
                         }
       
@@ -346,11 +374,7 @@ public class Game {
       }
 
       public static void PujinContinue() {
-            Main.animation(texte.BarDad3, 0);
-            RandomDog();
-      }
-
-      public static void RandomDog(){
+            Main.animation(texte.BarDad4, 0);
 
             if (FindDoggo == 1) {
                   Main.animation(texte.FindDoggo, 0);
@@ -362,12 +386,27 @@ public class Game {
 
                   Main.animation(texte.FindDoggo2, 0);
                   karma.setFindDoggo(2);
+
+                  Main.animation(texte.FindDoggo3, 0);
+                  Guild();
             }
 
             if (FindDoggo == 2) {
                   Main.animation(texte.FindDoggoNot, 0);
                   karma.setFindDoggo(1);
+                  Guild();
             }
       }
 
+      public static void Guild() {
+            Main.animation(texte.Guild1, 0);
+            BreakLine();
+            Main.animation(texte.Guild2, 0);
+            BreakLine();
+      }
+
+      
+      public static void BreakLine() {
+            System.out.println("\n-----------------------------------------------------------------------------\n\n");
+      }
 }

@@ -4,25 +4,25 @@
 
 Please Enter your name
 (Player enters your name)
-***Your name is (PlayerName) now***
+**Your name is (PlayerName) now**
 Please Enter your Last name
 (Player Enters Last name)
 
-### Wenn playername + Playerlastname = deine Mudda
+## Wenn playername + Playerlastname = deine Mudda
 Selber deine Mutter du Hs.
 
-***Your Last name is (Playerlastname) now***
+**Your Last name is (Playerlastname) now**
 Please enter your Age, too
 
 (Player Enters Age)
-***Your age is (Playerage) now***
+**Your age is (Playerage) now**
 
 
 ## Wenn Player age (420 / 69 / 42069 / 69420) und Playername (Wladimir) oder Playerlastname (Putin)
 Nice I like that, and because of that i'll give you a boost.
-player.setDamage(5)
+**player.setDamage(5)
 player.setHealth(15)
-player.setMoney(10)
+player.setMoney(10)**
                              
 
 
@@ -40,18 +40,18 @@ You can also see, that your HP is 10 at a bar on the top of your view.
 But you don't have the time to think about it, because a Goblin lord jumps right in front of you.
 So, what are you going to do?
 
-***1: Attack him	2: Run away and search for a village***
+**1: Attack him	2: Run away and search for a village**
 
 
 
-(You attack The Goblin Lord    (Code 1))
+**(You attack The Goblin Lord    (Code 1))**
 You attacked The Goblin Lord...
 ...But he is much stronger than you and kills you with one hit. 
-***YOU ARE DEAD***
+**YOU ARE DEAD**
 Please try again
 Press Enter to go back to the beginning
 
-(You run away from the Goblin Lord   (Code: 2))
+**(You run away from the Goblin Lord   (Code: 2))**
 You Ran away and luckily the Goblin Lord doesn't follow you.
 
 After two hours of walking, you reach a big town.
@@ -59,7 +59,7 @@ You walk in the Town and walk up to a crossroad.
 You came from the South side
 What are you going to do?
 
-***1: Go North	2: Go East\n	3: Go West***
+**1: Go North	2: Go East\n	3: Go West**
 
 
 (You are GOD   (Code: 2804))
@@ -71,8 +71,8 @@ Press 2 if you don't want to continue this way.
 
 (If you press 1)
 
-Your New HP: 1000
-Your New Damage: 1000
+**Your New HP: 1000
+Your New Damage: 1000**
 
 (If you choose something that isn't in Choice)
 
@@ -93,7 +93,7 @@ On the road you walk along is an old woman who is getting attacked by some thiev
 So, the woman asks for your help. 
 What are you going to do?
 
-***1: Help her	2: Go back to the Crossroad	3: Don't help her***
+**1: Help her	2: Go back to the Crossroad	3: Don't help her**
 
 
 (You help the Woman)
@@ -104,8 +104,8 @@ The Robbers fall and knock out
 The woman thanks you and asks, what she can do for you.
 What can she do for you?
 
-***1: Ask her to Join you on your journey
-2: Don't ask for anything.***
+**1: Ask her to Join you on your journey
+2: Don't ask for anything.**
 
 
 (You ask her to join you)
@@ -114,7 +114,7 @@ You ask her to join you on your journey.
 But first you ask her for her Name.
 (You select her Name)
 
-Her name is ….
+Her name is **GirlName**.
 As next you go to a Bar … knows.
 Press Enter to Continue
 
@@ -125,8 +125,6 @@ Soon you realise the road is a Dead end and go to a Soon bar to Relax.
 Press Enter to continue
 
 (You go back to the Crossroad)
-
-You go back to the Crossroad
 
 (You Ignore her)
 
@@ -161,7 +159,7 @@ The two men are robbing the girl and trying to undress her.
 But you can hear the girl scream: Stop!
  What are you going to do?
 
-***1: Attack the guys with Excalibur		2: Ignore it and go away Silent***
+**1: Attack the guys with Excalibur		2: Ignore it and go away Silent**
 
 
 (You attack the guys)
@@ -172,8 +170,8 @@ Next you get both guys and bind them together.
 The girl thanks you and asks what she can do for you.
 What are you going to ask for?
 
-***1: Ask her to Join you on your journey	 2: Just ask her for some Money.
-3: Don't ask for anything***
+**1: Ask her to Join you on your journey	 2: Just ask her for some Money.
+3: Don't ask for anything**
 
 
 
@@ -207,13 +205,13 @@ You ask for Nothing.
 The Girl thanks you Gratefully and goes home.
 So you are going to a Bar to relax after that day.
  
-***Press Enter to continue***
+**Press Enter to continue**
 
 
 
 
 
-(Special (Code: 42069))
+**(Special (Code: 42069))**
 
 You ask her for a Special Favour and Went to a near hotel…
 After that she tells you, her Name and that she loves you and that she wants to go with you
@@ -221,7 +219,7 @@ After that she tells you, her Name and that she loves you and that she wants to 
 
 (You select her Name)
 
-***Her Name is (Girlname) now***
+**Her Name is (Girlname) now**
 As next you go to a Bar (Girlname) knows
 Press Enter to Continue
 (The continuation at the Bar)
@@ -230,7 +228,7 @@ Press Enter to Continue
 
 You try to Sneak away but hit a bucket.
 The two guys hear it and attack you
-***YOU ARE DEAD***
+**YOU ARE DEAD**
 Please try again.
 Press Enter to go back to the beginning
 
@@ -250,7 +248,7 @@ Please Press Enter to Continue.
 You walked to the West
 There is a bar
 So, you Head to the bar to get some Information about this new World.
- Press Enter to Continue
+**Press Enter to Continue**
 
 
 
@@ -309,7 +307,7 @@ At first the girl tells you her name and you tell her yours.
 
 (You choose her Name)
 
-***The girls Name is (Girlname) now***
+**The girls Name is (Girlname) now**
 So, you start to talk.
 Girl: So, I'm 17, how old are you?
  You answer that you are **(Girlname)** years old
@@ -343,7 +341,7 @@ Wladimir Pujin: About years ago.
 
 (What are you Going to ask?)
 
-***1: Wodka, Wodka, Putin, Blyat	 2: you are a great Ruler***
+**1: Wodka, Wodka, Putin, Blyat	 2: you are a great Ruler**
 
 
 (If Choice 1)
@@ -351,8 +349,8 @@ You: So, Wodka, Wodka, Putin, Blyat.
 Pujin attacks you.
 Pujins Health: 10
  What are you going to do?
--
-***1: Attack him back	2: Run away***
+
+**1: Attack him back	2: Run away**
 
 (After you fight him and Win)
 Pujin: You won against me.
@@ -372,12 +370,12 @@ While you run Away you run into Adolf Schwitler.
 He Attacks you.
 (What are you going to do?)
 
-***1: Attack him	2: Run away***
+**1: Attack him	2: Run away**
 
 
 (You fight Schwitler and Lose)
 
-***You get revived and get a chance to survive by getting ported back to Pujins Bar.***
+**You get revived and get a chance to survive by getting ported back to Pujins Bar.**
 
 (After you Fight Schwitler and Win)
 
