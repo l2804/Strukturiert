@@ -59,7 +59,9 @@ You walk in the Town and walk up to a crossroad.
 You came from the South side
 What are you going to do?
 
-**1: Go North	2: Go East\n	3: Go West**
+**1: Go North	
+2: Go East\n	
+3: Go West**
 
 
 (You are GOD   (Code: 2804))
@@ -115,7 +117,7 @@ But first you ask her for her Name.
 (You select her Name)
 
 Her name is **GirlName**.
-As next you go to a Bar … knows.
+As next you go to a Bar **GirlName** knows.
 Press Enter to Continue
 
 (You Don't ask for anything)
@@ -170,7 +172,8 @@ Next you get both guys and bind them together.
 The girl thanks you and asks what she can do for you.
 What are you going to ask for?
 
-**1: Ask her to Join you on your journey	 2: Just ask her for some Money.
+**1: Ask her to Join you on your journey	 
+2: Just ask her for some Money.
 3: Don't ask for anything**
 
 
@@ -283,9 +286,9 @@ So, you Head to the bar to get some Information about this new World.
 ## (Bar with a Girl/Women (Bar))
 
 In the bar you get each a beer and talk
-…: So, I am 18 years old, and you?
+**GirlName**: So, I am 18 years old, and you?
 You tell her, that you are … years old
-…: …, huh. 
+**GirlName**: **PlayerAge**, huh. 
 ...That's a great age.
 
 
@@ -348,9 +351,10 @@ Wladimir Pujin: About years ago.
 You: So, Wodka, Wodka, Putin, Blyat.
 Pujin attacks you.
 Pujins Health: 10
- What are you going to do?
+What are you going to do?
 
-**1: Attack him back	2: Run away**
+**1: Attack him back	
+2: Run away**
 
 (After you fight him and Win)
 Pujin: You won against me.
@@ -370,7 +374,8 @@ While you run Away you run into Adolf Schwitler.
 He Attacks you.
 (What are you going to do?)
 
-**1: Attack him	2: Run away**
+**1: Attack him	
+2: Run away**
 
 
 (You fight Schwitler and Lose)
@@ -387,7 +392,7 @@ Uh... I mean, you have won, but that doesn't mean I'm not coming Back.
 
 You run away and run into a man with yellow Hair.
 You: Are you Donalt Trumpet the shitty leader of Asmerika?
- Donalt Trumpet: Fake news, fake news mothafucka!
+Donalt Trumpet: Fake news, fake news mothafucka!
 With those words he attacks you. 
 Press Enter to continue.
 
@@ -401,11 +406,11 @@ Donald Trumpet: Ok you won, but only because you counted wrong, I want a new ele
 (If you choose something that isn't in Choice)
 
 Because you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.
-Press Enter to continue
+**Press Enter to continue**
 
 
 
-(Finddog == true)
+## (Finddog == true)
 
 As next you are going outside of the Bar and Find a Dog.
 You: Hey, do you know this dog?
@@ -419,7 +424,16 @@ You: That's a good question.
 (What would you like to call the Dog?)
 
 (The Dogs name is (Dogname) now.)
+With your new dog **DogName** you head to the Adventurers Guild **GirlName** shows you.
 
-(Finddog == false)
+## (Finddog == false)
+You head out the Bar and go Straight to the Adventurers Guild **GirlName** shows you.
 
-No
+
+## Guild
+Soon you arrive at the Adventurers Guild.
+(What do you wanna Do First?.)
+1: Look at the Missions.
+2: Talk to **GIrlName**.
+3: Talk to the Adventurers There.
+4: Talk to the Woman at the Desk (Ab hier geht's dann wirklich Weiter)
