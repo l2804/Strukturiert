@@ -59,7 +59,7 @@ So, what are you going to do?
 
 
 
-**(You attack The Goblin Lord    (Code 1))**
+## (You attack The Goblin Lord    (Code 1))
 
 You attacked The Goblin Lord...
 ...But he is much stronger than you and kills you with one hit. 
@@ -70,7 +70,9 @@ Please try again
 
 **Press Enter to go back to the beginning**
 
-**(You run away from the Goblin Lord   (Code: 2))**
+
+
+## (You run away from the Goblin Lord   (Code: 2))
 
 You Ran away and luckily the Goblin Lord doesn't follow you.
 
@@ -85,6 +87,7 @@ What are you going to do?
 **1: Go North	        2: Go East\n	    3: Go West**
 
 
+
 ## (You are GOD   (Code: 2804))
 
 Congrats, you touch a god rock and get the powers of a god.
@@ -95,13 +98,16 @@ Press 1 to continue the game with the powers of a God.
 
 Press 2 if you don't want to continue this way.
 
-**(If you press 1)**
+
+### (If you press 1)
 
 **Your New HP: 1000     Your New Damage: 1000**
 
 **(Continuation at Crossroad)**
 
-**(If you choose something that isn't in Choice)**
+
+
+### (If you choose something that isn't in Choice)
 
 Because you didn't choose a path that was available you will start your adventure again.
 
@@ -127,6 +133,8 @@ What are you going to do?
 **1: Help her	    2: Go back to the Crossroad	    3: Don't help her**
 
 
+
+
 ## You help the Woman
 
 You are heading to the Woman.
@@ -142,6 +150,7 @@ What can she do for you?
 **1: Ask her to Join you on your journey    2: Don't ask for anything.**
 
 
+
 ## You ask her to join you
 
 You ask her to join you on your journey. 
@@ -150,11 +159,15 @@ But first you ask her for her Name.
 
 (Player Enters her Name)
 
-Her name is **GirlName** now.
+Her name is 
+(Girl Name) now.
 
-As next you go to a Bar **GirlName** knows.
+As next you go to a Bar 
+(Girl Name) knows.
 
 **Press Enter to Continue**
+
+
 
 ## You Don't ask for anything
 
@@ -164,9 +177,14 @@ Soon you realise the road is a Dead end and go to a Soon bar to Relax.
 
 **Press Enter to continue**
 
+
+
 ## You go back to the Crossroad
 
+(You go back to the Crossroad)
+
 ## You Ignore her
+
 
 You are trying to ignore her and walk besides them.
 
@@ -212,6 +230,7 @@ What are you going to do?
 **1: Attack the guys with Excalibur		2: Ignore it and go away Silent**
 
 
+
 ## You attack the guys
 
 You attack the two guys with Excalibur
@@ -240,17 +259,21 @@ First you ask her for her Name
 
 (Player can Select the Name)
 
-She says that her Name is **Girlname**
+She says that her Name is 
+(Girl Name)
 
 `**Press Enter to Continue**
 
-As next you go to a Bar **GirlName** knows.
+As next you go to a Bar 
+(Girl Name) knows.
 
 **Press Enter to Continue**
 
 **(Continuation at the Bar)**
 
-(You ask her for Money)
+
+
+### (You ask her for Money)
 
 You ask the Girl for some Money
 
@@ -261,6 +284,8 @@ So, you head to the bar of her dad.
 **Press Enter to Continue**
 
 (Continuation at Bar of her dad)
+
+
 
 ## You ask for Nothing
 
@@ -288,7 +313,7 @@ After that she tells you, her Name and that she loves you and that she wants to 
 
 **Her Name is (Girlname) now**
 
-As next you go to a Bar **Girlname** knows.
+As next you go to a Bar (Girl Name) knows.
 
 **Press Enter to Continue**
 
@@ -306,7 +331,9 @@ Please try again.
 
 **Press Enter to go back to the beginning**
 
-**(If you choose something that isn't in Choice)**
+
+
+### (If you choose something that isn't in Choice)
 
 Because you didn't choose a path that was available you will start again from the East.
 
@@ -362,13 +389,15 @@ So, you Head to the bar to get some Information about this new World.
 
 In the bar you get each a beer and talk
 
-**GirlName**: So, I am 18 years old, and you?
+
+(Girl Name): So, I am 18 years old, and you?
 
 **(Player Chooses his Age)**
 
-You tell her, that you are **PlayerAge** years old
+You tell her, that you are (Player Age) years old
 
-**GirlName**: **PlayerAge**, huh. 
+
+(Girl Name): (Player Age), huh. 
 ...That's a great age.
 
 
@@ -379,9 +408,9 @@ You go in a bar and order a drink.
 
 So, you Drink and start to think about what you are going to do next.
 
-**PlayerName**: What am I going to do?
+(Player Name): What am I going to do?
 
-**PlayerName**: What can I do as an (Playerage) years old boy?
+(Player Name): What can I do as an (Playerage) years old boy?
 
 
 
@@ -399,61 +428,71 @@ At first the girl tells you her name and you tell her yours.
 
 So, you start to talk.
 
-**GirlName**: So, I'm 17, how old are you?
 
-You answer that you are **(Girlname)** years old
+(Girl Name): So, I'm 17, how old are you?
 
-**GirlName**: **(Playerage)** huh, that's great.
+You answer that you are (Player Age) years old
 
-**GirlName**: Soo, what are we going to do after my dad comes?
+
+(Girl Name): (Player Age) huh, that's great.
+
+
+(Girl Name): Soo, what are we going to do after my dad comes?
 
 You tell her that you are going to look for a guilt or something and fight some Monsters for Money.
 
-**GirlName**: And where's my part in that plan?
 
-**PlayerName**: Your Part???
+(Girl Name): And where's my part in that plan?
 
-**GirlName**: Yeah, I thought I would come with you.
+(Player Name): Your Part???
 
-**PlayerName**: I mean, if you want to, but it can be hard, especially for a young Girl like you.
 
-**GirlName**: Especially for a young girl like me???
+(Girl Name): Yeah, I thought I would come with you.
 
-**PlayerName**: Yeah?!"
+(Player Name): I mean, if you want to, but it can be hard, especially for a young Girl like you.
 
-**GirlName**: I’m an adult!!! I Should just been married one year ago.
 
-**PlayerName**: Is that? How old does the people here become?
+(Girl Name): Especially for a young girl like me???
 
-**GirlName**: The oldest people I know became 30.
+(Player Name): Yeah?!"
 
-**PlayerName**: Really???
 
-**GirlName**: Don't tell me you didn't know that the average age is 28
+(Girl Name): I’m an adult!!! I Should just been married one year ago.
 
-**PlayerName**: Sure, I did know that I'm not dumb.
+(Player Name): Is that? How old does the people here become?
+
+
+(Girl Name): The oldest people I know became 30.
+
+(Player Name): Really???
+
+
+(Girl Name): Don't tell me you didn't know that the average age is 28
+
+(Player Name): Sure, I did know that I'm not dumb.
 
 You Think: WTF, does that mean I'm old in this world?
 
-**GirlName**: Oh, good, that's good.
+
+(Girl Name): Oh, good, that's good.
 
 After a While the dad comes.
 
 Her dad: Hey, you must be the young man who saved my daughter.
 
-**PlayerName**: Yeah, that's me, nice to meet you ahh...
+(Player Name): Yeah, that's me, nice to meet you ahh...
 
 Her dad: Wladimir, Wladimir Pujin.
 
-**PlayerName**: Pujin, aren't you the president of Russia?
+(Player Name): Pujin, aren't you the president of Russia?
 
 Wladimir Pujin: Wait, you are from the Earth?
 
-**PlayerName**: Yeah, I got ported her one Day ago.
+(Player Name): Yeah, I got ported her one Day ago.
 
 Wladimir Pujin: Oh, that's interesting.
 
-**PlayerName**: And when did you get here.
+(Player Name): And when did you get here.
 
 Wladimir Pujin: About years ago.    
 
@@ -462,9 +501,9 @@ Wladimir Pujin: About years ago.
 **1: Wodka, Wodka, Putin, Blyat	 2: you are a great Ruler**
 
 
-(If Choice 1)
+### (If Choice 1)
 
-**PlayerName**: So, Wodka, Wodka, Putin, Blyat.
+(Player Name): So, Wodka, Wodka, Putin, Blyat.
 
 Pujin attacks you.
 
@@ -474,22 +513,27 @@ What are you going to do?
 
 **1: Attack him back 2: Run away**
 
-(After you fight him and Win)
+
+
+
+### (After you fight him and Win)
 
 Pujin: You won against me.
 
-(You pray him / you Win pt.2)
+
+
+### (You pray him / you Win pt.2)
 
 Pujin: You are a worthy Man for my daughter
 
-**PlayerName**: Sorry, but I can't marry your daughter.
+(Player Name): Sorry, but I can't marry your daughter.
 I must find a way back home.
 
 Pujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her
 
-**PlayerName**: Ok, but if I find a way back home, I will let you here with your daughter.
+(Player Name): Ok, but if I find a way back home, I will let you here with your daughter.
 
-**PlayerName**: Ok, but I’ll get her back safe, I swear.
+(Player Name): Ok, but I’ll get her back safe, I swear.
 
 (You Run away from Pujin)
 
@@ -506,7 +550,7 @@ He Attacks you.
 
 
 
-(You fight Schwitler and Lose)
+### (You fight Schwitler and Lose)
 
 **You get revived and get a chance to survive by getting ported back to Pujins Bar.**
 
@@ -517,11 +561,14 @@ Uh... I mean, you have won, but that doesn't mean I'm not coming Back.
 
 **(Schwitler will Return)**
 
-(You Run away from Schwitler)
+
+
+
+### (You Run away from Schwitler)
 
 You run away and run into a man with yellow Hair.
 
-**PlayerName**: Are you Donalt Trumpet the shitty leader of Asmerika?
+(Player Name): Are you Donalt Trumpet the shitty leader of Asmerika?
 
 Donalt Trumpet: Fake news, fake news mothafucka!
 
@@ -532,11 +579,13 @@ With those words he attacks you.
 
 
 
-(You Win against Trumpet)
+### (You Win against Trumpet)
 
 Donald Trumpet: Ok you won, but only because you counted wrong, I want a new election
 
-(If you choose something that isn't in Choice)
+
+
+### (If you choose something that isn't in Choice)
 
 Because you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.
 
@@ -548,27 +597,30 @@ Because you didn't choose a possible way you are going back in time to the time 
 
 As next you are going outside of the Bar and Find a Dog.
 
-**PlayerName**: Hey, do you know this dog?
+(Player Name): Hey, do you know this dog?
 
-**GirlName**: No, I don't, why?   
 
-**PlayerName**: I was thinking about, that it would be Cool to have a Dog.
-**GirlName**: You mean, that we should adopt this Dog?   
+(Girl Name): No, I don't, why?   
 
-**PlayerName**: Yeah, I mean if don't mind it?!
+(Player Name): I was thinking about, that it would be Cool to have a Dog.
 
-**GirlName**: No, I dont mind, but what should we name it, then?       
+(Girl Name): You mean, that we should adopt this Dog?   
 
-**PlayerName**: That's a good question. 
+(Player Name): Yeah, I mean if don't mind it?!
+
+
+(Girl Name): No, I dont mind, but what should we name it, then?       
+
+(Player Name): That's a good question. 
 
 (What would you like to call the Dog?)
 
-**(The Dogs name is (Dogname) now.)**
+**(The Dogs name is (Dog Name) now.)**
 
-With your new dog **DogName** you head to the Adventurers Guild **GirlName** shows you.
+With your new dog (Gog Name) you head to the Adventurers Guild (Girl Name) shows you.
 
 ## (Finddog == false)
-You head out the Bar and go Straight to the Adventurers Guild **GirlName** shows you.
+You head out the Bar and go Straight to the Adventurers Guild (Girl Name) shows you.
 
 
 ## Guild
@@ -578,7 +630,7 @@ Soon you arrive at the Adventurers Guild.
 
 1: Look at the Missions.
 
-2: Talk to to **GIrlName**.
+2: Talk to to (Girl Name).
 
 3: Talk to the Adventurers There.
 
