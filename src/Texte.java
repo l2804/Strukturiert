@@ -32,7 +32,7 @@ public void setPlayer(Player player, Doggo doggo, Girl girl) {
 
 
 Nice =  "\nSo, you are " + player.getName() + ", and you are " + player.getAge() + " years old, hm???!" 
-        + "\nNice, I likes that!\n"   + "\nBecause I like that I will give you a boost, have fun with it.\n";
+        + "\nNice, I likes that!\n"     + "\nBecause I like that I will give you a boost, have fun with it.\n";
 
 
 
@@ -202,7 +202,7 @@ ElseEast =      "\nBecause you didn't choose a path that was available you will 
 //West
 
 West =  "You walked to the West\n" + "\nThere is a bar." 
-        + "\n\nSo, you Head to the bar to get some Information about this new World." + "\n\n(Press Enter to Continue)";
+        + "\n\nSo, you Head to the bar to get some Information about this new World."   + "\n\n(Press Enter to Continue)";
 
 
 
@@ -210,8 +210,8 @@ West =  "You walked to the West\n" + "\nThere is a bar."
 
                         
 //Bar with a Girl/Women
-Bar =   "In the bar you get each a beer and talk\n\n"       + "" + girl.getGirlName() + ": So, I am 18 years old, and you?\n\n"
-        + "You tell her, that you are" + player.getAge() + " years old\n"         + "" + girl.getGirlName() + ":" + player.getAge() + ", huh.\n...That's a great age.\n";
+Bar =   "In the bar you get each a beer and talk\n\n"       + girl.getGirlName() + ": So, I am 18 years old, and you?\n\n"
+        + "You tell her, that you are" + player.getAge() + " years old\n"         + girl.getGirlName() + ":" + player.getAge() + ", huh.\n...That's a great age.\n";
 
 
 
@@ -227,20 +227,20 @@ BarDad =        "\nAt the Bar of her Dad you sit down at a table and talk until 
                 + "\nAt first the girl tells you her name and you tell her yours.\n\n"  +       "\n(What is the girls Name?)\n";  
 BarDad2 =       "\n***The girls Name is " + girl.getGirlName() + "***\n"
                 + "\nSo, you start to talk.\n"       + "\n" + girl.getGirlName() + ": So, I'm 17, how old are you?\n"         + "You answer,that you are" + player.getAge() + " years old"
-                + "" + girl.getGirlName() + ":" + player.getAge() + " huh, that's great.\n"         + "" + girl.getGirlName() + ": Sooo, what are we going to do after my dad comes?\n"
+                + girl.getGirlName() + ":" + player.getAge() + " huh, that's great.\n"         + girl.getGirlName() + ": Sooo, what are we going to do after my dad comes?\n"
                 + "You tell her that you are going to look for a guilt or something\nand fight some Monsters for Money.\n"
-                + "" + girl.getGirlName() + ": And where's my part in that plan?\n"         + player.getName() + ": Your Part???\n" + "" + girl.getGirlName() + ": Yeah, I thought I would come with you.\n"
+                + girl.getGirlName() + ": And where's my part in that plan?\n"         + player.getName() + ": Your Part???\n" + girl.getGirlName() + ": Yeah, I thought I would come with you.\n"
                 + player.getName() + ": I mean, if you want to, but it can be hard, especially for a young Girl like you.\n" 
-                + "" + girl.getGirlName() + ": Especially for a young girl like me???\n"      + player.getName() + ": Yeah?!"
-                + "" + girl.getGirlName() + ": I'm an adult!!! I Should just been married one year ago.\n"       + player.getName() + ": Is that? How old does the people here become?\n"
-                + "" + girl.getGirlName() + ": The oldest people I know became 30.\n"       + player.getName() + ": Really???\n"
-                + "" + girl.getGirlName() + ": Don't tell me you didn't know that the average age is 28.\n"         + player.getName() + ": Sure, I did know that I'm not dumb, zh.\n"
-                + "(WTF, does that mean I'm old in this world?)\n"      + "" + girl.getGirlName() + ": Oh, good, that's really good.\n"        + "\n\n"
+                + girl.getGirlName() + ": Especially for a young girl like me???\n"      + player.getName() + ": Yeah?!"
+                + girl.getGirlName() + ": I'm an adult!!! I Should just been married one year ago.\n"       + player.getName() + ": Is that? How old does the people here become?\n"
+                + girl.getGirlName() + ": The oldest people I know became 30.\n"       + player.getName() + ": Really???\n"
+                + girl.getGirlName() + ": Don't tell me you didn't know that the average age is 28.\n"         + player.getName() + ": Sure, I did know that I'm not dumb, zh.\n"
+                + "(WTF, does that mean I'm old in this world?)\n"      + girl.getGirlName() + ": Oh, good, that's really good.\n"        + "\n\n"
                 +  "After a While the dad comes.\n"         + girl.getGirlName() + "'s dad: Hey, you must be the young man who saved my daughter.\n"
                 + player.getName() + ": Yeah, that's me, nice to meet you ahh...\n"      + girl.getGirlName() + "'s dad: Wladimir, Wladimir Pujin.\n"
                 + player.getName() + ": Pujin, aren't you the president of Russia?\n"       + "Wladimir Pujin: Wait, you are from the Earth?\n"
                 + player.getName() + ": Yeah, I got ported her one Day ago.\n"      + "Wladimir Pujin: Oh, that's interesting.\n"      + player.getName() + ": And when did you get here.\n"
-                + "Wladimir Pujin: About years ago.\n"  + "\nWhat are you going to say?\n ";
+                + "Wladimir Pujin: About years ago.\n"          + "\nWhat are you going to say?\n ";
 BarDad3 =       "1: Wodka, Wodka, Putin, Blyat."      + "\n2: You are a great man.\n";  
 
 
@@ -251,7 +251,7 @@ WodkaWodkaPutinBlyat2 =  "1: Attack him back\n"        + "2: Run away\n";
 
 
 
-BarDadGood =    player.getName() + ": You are a great ruler Pujin." + "\nPujin: Thank you.\n";
+BarDadGood =    player.getName() + ": You are a great ruler Pujin."     + "\nPujin: Thank you.\n";
 
 
 
