@@ -99,7 +99,7 @@ Press 1 to continue the game with the powers of a God.
 Press 2 if you don't want to continue this way.
 
 
-### (If you press 1)
+### **(If you press 1)**
 
 **Your New HP: 1000     Your New Damage: 1000**
 
@@ -107,7 +107,7 @@ Press 2 if you don't want to continue this way.
 
 
 
-### (If you choose something that isn't in Choice)
+### **(If you choose something that isn't in Choice)**
 
 Because you didn't choose a path that was available you will start your adventure again.
 
@@ -273,7 +273,7 @@ As next you go to a Bar
 
 
 
-### (You ask her for Money)
+### **(You ask her for Money)**
 
 You ask the Girl for some Money
 
@@ -333,7 +333,7 @@ Please try again.
 
 
 
-### (If you choose something that isn't in Choice)
+### **(If you choose something that isn't in Choice)**
 
 Because you didn't choose a path that was available you will start again from the East.
 
@@ -501,7 +501,7 @@ Wladimir Pujin: About years ago.
 **1: Wodka, Wodka, Putin, Blyat	 2: you are a great Ruler**
 
 
-### (If Choice 1)
+### **(If Choice 1)**
 
 (Player Name): So, Wodka, Wodka, Putin, Blyat.
 
@@ -516,13 +516,13 @@ What are you going to do?
 
 
 
-### (After you fight him and Win)
+### **(After you fight him and Win)**
 
 Pujin: You won against me.
 
 
 
-### (You pray him / you Win pt.2)
+### **(You pray him / you Win pt.2)**
 
 Pujin: You are a worthy Man for my daughter
 
@@ -550,7 +550,7 @@ He Attacks you.
 
 
 
-### (You fight Schwitler and Lose)
+### **(You fight Schwitler and Lose)**
 
 **You get revived and get a chance to survive by getting ported back to Pujins Bar.**
 
@@ -564,7 +564,7 @@ Uh... I mean, you have won, but that doesn't mean I'm not coming Back.
 
 
 
-### (You Run away from Schwitler)
+### **(You Run away from Schwitler)**
 
 You run away and run into a man with yellow Hair.
 
@@ -579,13 +579,13 @@ With those words he attacks you.
 
 
 
-### (You Win against Trumpet)
+### **(You Win against Trumpet)**
 
 Donald Trumpet: Ok you won, but only because you counted wrong, I want a new election
 
 
 
-### (If you choose something that isn't in Choice)
+### **(If you choose something that isn't in Choice)**
 
 Because you didn't choose a possible way you are going back in time to the time you got to Pujins Bar.
 

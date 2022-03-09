@@ -1,0 +1,53 @@
+@startuml
+
+Object game{
+
+    Age = 18
+    *--> player
+    *--> girl
+    *--> enemy
+    Doggo *--> doggo
+
+}
+
+object player{
+
+    health = 10
+    food = 10
+    money = 5
+    damage = 3
+    age = 18
+    name = "Lukas"
+    lastName = "Tenbrock"
+
+}
+
+object girl{
+
+    girlName = "Maria - Lisa"
+    girlAge = 18
+
+}
+
+object doggo{
+
+    doggoName = "Bello"
+
+}
+
+object enemy{
+
+    damage = 1
+    health = 15  
+    name = "Pujin"
+}
+
+object karma{
+
+    FindDoggo = 2
+    WonSchwitler = 1
+
+}
+
+
+@enduml

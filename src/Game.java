@@ -403,10 +403,24 @@ public class Game {
             BreakLine();
             Main.animation(texte.Guild2, 0);
             BreakLine();
+            choice = myScanner.nextInt();
+
+            switch(choice){
+                  case 1: Main.animation(texte.Quests, 0); break;
+                  case 2: Main.animation(texte.Talk_Girl, 0); break;
+                  case 3: Main.animation(texte.Talk_Adventurers, 0); break;
+                  case 4: Main.animation(texte.Talk_Woman, 0); break;
+                  default: Main.animation(texte.ElseGuild, 0); Guild();
+            }
+            
       }
 
       
       public static void BreakLine() {
             System.out.println("\n-----------------------------------------------------------------------------\n\n");
       }
+
+      
+
+      
 }
