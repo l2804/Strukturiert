@@ -22,6 +22,8 @@ public class Texte {
         String FindDoggo, FindDoggo2, FindDoggo3, FindDoggoNot;
         //Guild
         String Guild1, Guild2, Quests, Talk_Girl, Talk_Adventurers, Talk_Woman, ElseGuild;
+        //End Guild
+        String endGuild1;
         
 
 public void setPlayer(Player player, Doggo doggo, Girl girl) {
@@ -310,12 +312,15 @@ Guild2 =        "1: Look at the Missions" + "\n2: Talk to " + girl.getGirlName()
 
 Quests =        "You Walk over and Lok at the Missions on the Board.";
 
-Talk_Girl =      "You talk to the Girl.";
-
 Talk_Adventurers =      "You Go over and Try to tlk to a Adventurer.";
 
 Talk_Woman =    "You go to the Desk and talk to the Woman at the Desk";
 
+endGuild1 =     "You talk to the Girl.\n" + "The Woman at the counter starts to talk as soon as you are near enough to hear her talking normally.\n\n"
+                + "Counter Woman: Hello, how can I help you?\n" + player.getName() + ": Yes, thank you, can my friend and I Register as Adverturers?\n"
+                + girl.getName() + ": Me too, i thougt only you would register, besides i";
+
 ElseGuild =     "Because you didn't choose anything that was Chooseable, you can do it Again.";
+
 }
 }

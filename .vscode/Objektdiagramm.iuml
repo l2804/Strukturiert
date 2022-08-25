@@ -2,11 +2,11 @@
 
 Object game{
 
-    Age = 18
-    *--> player
-    *--> girl
-    *--> enemy
-    Doggo *--> doggo
+    age = 18
+    player = player
+    girl
+    enemy
+    doggo
 
 }
 
@@ -49,5 +49,9 @@ object karma{
 
 }
 
+doggo *--> game
+player *--> game
+girl *--> game
+enemy *--> game
 
 @enduml

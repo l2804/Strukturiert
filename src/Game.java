@@ -401,18 +401,25 @@ public class Game {
       public static void Guild() {
             Main.animation(texte.Guild1, 0);
             BreakLine();
+      }
+      public static void Guild2(){
             Main.animation(texte.Guild2, 0);
             BreakLine();
             choice = myScanner.nextInt();
+            
 
             switch(choice){
-                  case 1: Main.animation(texte.Quests, 0); break;
-                  case 2: Main.animation(texte.Talk_Girl, 0); break;
-                  case 3: Main.animation(texte.Talk_Adventurers, 0); break;
-                  case 4: Main.animation(texte.Talk_Woman, 0); break;
-                  default: Main.animation(texte.ElseGuild, 0); Guild();
-            }
+                  case 1: Main.animation(texte.Quests, 0); Guild(); break;
+                  case 2: Main.animation(texte.Talk_Girl, 0); Guild(); break;
+                  case 3: Main.animation(texte.Talk_Adventurers, 0); Guild(); break;
+                  case 4: EndGuild(); break;
+                  default: Main.animation(texte.ElseGuild, 0); Guild(); break;
+      }
             
+      }
+
+      public static void EndGuild(){
+            Main.animation(texte.endGuild1, 0);
       }
 
       
