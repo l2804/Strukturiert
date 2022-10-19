@@ -9,7 +9,7 @@ public class Texte {
         //North
         String North, North2, Help, Help2, joinNorth, DeadEnd, Back, Ignore, ElseNorth;
         //East
-        String East, East2,AttackEast, AttackEast2, JoinEast, JoinEast2, Money, Nothing, FourTwoZeroSixNine, FourTwoZeroSixNine2, ElseEast;
+        String East, East2, AttackEast, AttackEast2, JoinEast, JoinEast2, Money, Nothing, FourTwoZeroSixNine, FourTwoZeroSixNine2, ElseEast;
         //West
         String West;
         //Bar with Girl         (Paths = East 1.1 & East 1.42069, North 1.1)
@@ -24,9 +24,9 @@ public class Texte {
         String Guild1, Guild2, Quests, Talk_Girl, Talk_Adventurers, Talk_Woman, ElseGuild;
         //End Guild
         String endGuild1;
-        
 
-public void setPlayer(Player player, Doggo doggo, Girl girl) {
+
+        public void setPlayer(Player player, Doggo doggo, Girl girl) {
         this.player = player;
         this.doggo = doggo;
         this.girl = girl;
@@ -165,7 +165,7 @@ AttackEast2 =   "1: Ask her to Join you on your Journey.\n"       + "2: Just ask
  //You ask her to Join you
 JoinEast =      "You ask her to Join you.\n"       + "... She says Yes.\n\n"
                 + "First you ask her for her Name...\n\n"       + "\n(What is her Name?)\n";
-JoinEast2 =     "She says that her Name is " + girl.getGirlName() + "."      + "Press Enter to Continue\n"
+JoinEast2 =     "She says that her Name is " + girl.getGirlName() + "" + "Press Enter to Continue\n"
                 + "\nAs next you go to a Bar " + girl.getGirlName() + " knows\n\n"      + "Press Enter to Continue\n\n";
 
 

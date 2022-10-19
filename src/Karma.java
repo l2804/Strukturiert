@@ -1,4 +1,3 @@
-
 public class Karma {
 
     private int WonSchwitler = 1; //(2 Wenn  Schwitler als Endboss auftauchen soll)
