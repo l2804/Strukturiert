@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.Random;
 
@@ -17,6 +16,7 @@ public class Game {
       public static Doggo doggo = new Doggo();
       public static Enemy enemy = new Enemy();
       public static Karma karma = new Karma();
+      public static Robot robot = new Robot();
       public static Fight fight;
       public static Texte texte = new Texte();
       public static Random rand = new Random();
@@ -26,21 +26,23 @@ public class Game {
 
       public static void startGame(Game game) {
             texte.setPlayer(player, doggo, girl);
-            story();
+            Main.animation("Are you a Robot?", 10);
+           Main.animation("...", 100);
+            Main.animation("I don't believe You, please press the folowing line correct, letter by letter.", 10);
+            robot.verification();
       }
 
-
-      public static void story() {
-            Main.animation(texte.intro, 0);
+      static void story() {
+            Main.animation(texte.intro, 10);
             BreakLine();
 
                   //Set Name
-                  Main.animation(texte.Name1, 0);
+                  Main.animation(texte.Name1, 10);
                   String name = nameScanner.next();
                   player.setName(name);
                   texte.setPlayer(player, doggo, girl);
 
-                  Main.animation(texte.lastName1, 0);
+                  Main.animation(texte.lastName1, 10);
                   String lastName = nameScanner.next();
                   player.setLastName(lastName);
                   texte.setPlayer(player, doggo, girl);
@@ -50,51 +52,51 @@ public class Game {
                   }
                   
 
-                  Main.animation(texte.Name2, 0);
+                  Main.animation(texte.Name2, 10);
 
                   //Set Age
-                  Main.animation(texte.Age1, 0);
+                  Main.animation(texte.Age1, 10);
                   Age = ageScanner.nextInt();
                   player.setAge(Age);
                   texte.setPlayer(player, doggo, girl);
-                  Main.animation(texte.Age2, 0);
+                  Main.animation(texte.Age2, 10);
 
                         if ((player.getAge() == 69 || player.getAge() == 420 || player.getAge() == 42069 || player.getAge() == 69420) && (player.getLastName().equals("Wladimir") || player.getName().equals("Putin") )) {
-                              Main.animation(texte.Nice, 0);
+                              Main.animation(texte.Nice, 10);
                               player.setDamage(5);
                               player.setHealth(15);
                               player.setMoney(10);
                               texte.setPlayer(player, doggo, girl);
-                              Main.animation(texte.NewStats, 0);
+                              Main.animation(texte.NewStats, 10);
                         }
 
             //Real Start
-            Main.animation(texte.Intro2, 0);
+            Main.animation(texte.Intro2, 10);
             BreakLine();
-            Main.animation(texte.Intro3, 0);
+            Main.animation(texte.Intro3, 10);
             BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
-                  Main.animation(texte.Attack, 0);
+                  Main.animation(texte.Attack, 10);
                   enterScanner.nextLine();
                   story();
             }
 
             else if (choice == 2) {
-                  Main.animation(texte.Run, 0);
+                  Main.animation(texte.Run, 10);
                   Crossroad();
             }
 
             else if (choice == 2804) {
-                  Main.animation(texte.God, 0);
+                  Main.animation(texte.God, 10);
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
                         player.setDamage(1000);
                         player.setHealth(1000);
                         player.setMoney(1000);
-                        Main.animation(texte.NewStats, 0);
+                        Main.animation(texte.NewStats, 10);
                         Crossroad();
                   }
 
@@ -103,14 +105,14 @@ public class Game {
                   }
 
                   else {
-                        Main.animation(texte.Else, 0);
+                        Main.animation(texte.Else, 10);
                         enterScanner.nextLine();
-                        story(); 
+                        story();
                   }
             }
       
             else {
-                  Main.animation(texte.Else, 0);
+                  Main.animation(texte.Else, 10);
                   enterScanner.nextLine();
                   story();
             }
@@ -119,9 +121,9 @@ public class Game {
             
       
       public static void Crossroad(){
-            Main.animation(texte.Run2, 0);
+            Main.animation(texte.Run2, 10);
             BreakLine();
-            Main.animation(texte.Run3, 0);
+            Main.animation(texte.Run3, 10);
             BreakLine();
             choice = myScanner.nextInt();
 
@@ -135,51 +137,51 @@ public class Game {
 
             
       public static void North() {
-            Main.animation(texte.North, 0);
+            Main.animation(texte.North, 10);
             BreakLine();
-            Main.animation(texte.North2, 0);
+            Main.animation(texte.North2, 10);
             BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
-                  Main.animation(texte.Help, 0);
+                  Main.animation(texte.Help, 10);
                   BreakLine();
-                  Main.animation(texte.Help2, 0);
+                  Main.animation(texte.Help2, 10);
                   BreakLine();
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
-                        Main.animation(texte.joinNorth, 0);
+                        Main.animation(texte.joinNorth, 10);
                         enterScanner.nextLine();
                         Bar();
                   }
 
                   else if (choice == 2) {
-                        Main.animation(texte.DeadEnd, 0);
+                        Main.animation(texte.DeadEnd, 10);
                         enterScanner.nextLine();
                         Bar2();
                   }
             
                   else {
-                        Main.animation(texte.ElseNorth, 0);
+                        Main.animation(texte.ElseNorth, 10);
                         enterScanner.nextLine();
                         North();
                   }
             }
 
             else if (choice == 2) {
-                  Main.animation(texte.Back, 0);
+                  Main.animation(texte.Back, 10);
                   North();
             }
 
             else if (choice == 3) {
-                  Main.animation(texte.Ignore, 0);
+                  Main.animation(texte.Ignore, 10);
                   enterScanner.nextLine();
                   North();
             }
 
             else {
-                  Main.animation(texte.ElseNorth, 0);
+                  Main.animation(texte.ElseNorth, 10);
                   enterScanner.nextLine();
                   North();
             }
@@ -188,95 +190,95 @@ public class Game {
 
 
       public static  void East() {
-            Main.animation(texte.East, 0);
+            Main.animation(texte.East, 10);
             BreakLine();
-            Main.animation(texte.East2, 0);
+            Main.animation(texte.East2, 10);
             BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
-                  Main.animation(texte.AttackEast, 0);
+                  Main.animation(texte.AttackEast, 10);
                   BreakLine();
-                  Main.animation(texte.AttackEast2, 0);
+                  Main.animation(texte.AttackEast2, 10);
                   BreakLine();
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
-                        Main.animation(texte.JoinEast, 0);
+                        Main.animation(texte.JoinEast, 10);
 
                               //Set the Girls name
                               String girlName = nameScanner.next();
                               girl.setGirlName(girlName);
                               texte.setPlayer(player, doggo, girl);
 
-                        Main.animation(texte.JoinEast2, 0);
+                        Main.animation(texte.JoinEast2, 10);
                         enterScanner.nextLine();
                         Bar();
                   }
 
                   else if (choice == 2) {
-                        Main.animation(texte.Money, 0);
+                        Main.animation(texte.Money, 10);
                         BarDad();
                   }
 
                   else if (choice == 3) {
-                        Main.animation(texte.Nothing, 0);
+                        Main.animation(texte.Nothing, 10);
                         enterScanner.nextLine();
                         Bar2();
                   }
 
                   else if (choice == 42069 && player.getAge() >= 18) {
-                        Main.animation(texte.FourTwoZeroSixNine, 0);
+                        Main.animation(texte.FourTwoZeroSixNine, 10);
 
                               //Set the Girls name
                               String girlName = nameScanner.next();
                               girl.setGirlName(girlName);
                               texte.setPlayer(player, doggo, girl);
 
-                        Main.animation(texte.FourTwoZeroSixNine2, 0);
+                        Main.animation(texte.FourTwoZeroSixNine2, 10);
                         enterScanner.nextLine();
                         Bar();
                   }
 
                   else {
-                        Main.animation(texte.ElseEast, 0);
+                        Main.animation(texte.ElseEast, 10);
                         East();
                   }
             }
 
                   else if (choice == 2) {
-                        Main.animation(texte.Ignore, 0);
+                        Main.animation(texte.Ignore, 10);
                         enterScanner.nextLine();
                         story();
                   }
 
                   else {
-                        Main.animation(texte.ElseEast, 0);
+                        Main.animation(texte.ElseEast, 10);
                         East();
                   }
       }
 
 
       public static void West() {
-            Main.animation(texte.West, 0);
+            Main.animation(texte.West, 10);
             enterScanner.nextLine();
             Bar2();
       }
          
       
       public static void Bar() { // Bar with Girl  (East 1.1 & East 1.42069) (North 1.1)
-            Main.animation(texte.Bar, 0);
+            Main.animation(texte.Bar, 10);
 
       }
         
       
       public static void Bar2() { // Bar Alone  (West) (East 1.3) (North 1.2)
-            Main.animation(texte.Bar2, 0);
+            Main.animation(texte.Bar2, 10);
       }
       
 
       public static void BarDad() { // Bar of the Dad     (East 1.2)
-            Main.animation(texte.BarDad, 0);
+            Main.animation(texte.BarDad, 10);
 
                   //Set the Girls name
                   String girlName = nameScanner.next();
@@ -284,30 +286,30 @@ public class Game {
                   texte.setPlayer(player, doggo, girl);
 
 
-            Main.animation(texte.BarDad2, 0);
+            Main.animation(texte.BarDad2, 10);
             BreakLine();
-            Main.animation(texte.BarDad3, 0);
+            Main.animation(texte.BarDad3, 10);
             BreakLine();
             choice = myScanner.nextInt();
 
             if (choice == 1) {
-                  Main.animation(texte.WodkaWodkaPutinBlyat, 0);
+                  Main.animation(texte.WodkaWodkaPutinBlyat, 10);
                   BreakLine();
-                  Main.animation(texte.WodkaWodkaPutinBlyat2, 0);
+                  Main.animation(texte.WodkaWodkaPutinBlyat2, 10);
                   BreakLine();
                   choice = myScanner.nextInt();
 
                   if (choice == 1) {
                         fight.Startfight(player, enemy, "Wladimir", "Pujin", "him");
                         enterScanner.nextLine();
-                        Main.animation(texte.BarDadWon, 0);
+                        Main.animation(texte.BarDadWon, 10);
                         PujinContinue();
                   }
       
                   else if (choice == 2) {
-                        Main.animation(texte.RunSchwitler1, 0);
+                        Main.animation(texte.RunSchwitler1, 10);
                         BreakLine();
-                        Main.animation(texte.RunSchwitler2, 0);
+                        Main.animation(texte.RunSchwitler2, 10);
                         BreakLine();
                         choice = myScanner.nextInt();
       
@@ -318,108 +320,109 @@ public class Game {
                               fight.Startfight(player, enemy, "Adolf", "Schwitler", "him");
       
                               if (player.getHealth() <= 0) {
-                                    Main.animation(texte.Dead, 0);
+                                    Main.animation(texte.Dead, 10);
                                     BarDad();
                               }
       
                               else if (player.getHealth() >= 1) {
                                     karma.setWonSchwitler(2);
-                                    Main.animation(texte.WonSchwitler, 0);
+                                    Main.animation(texte.WonSchwitler, 10);
                                     PujinContinue();
                               }
                         }
       
                         else if (choice == 2) {
-                              Main.animation(texte.RunTrumpet, 0);
+                              Main.animation(texte.RunTrumpet, 10);
                               enemy.setHealth(8);
                               enemy.setDamage(3);
                               enterScanner.nextLine();
                               fight.Startfight(player, enemy, "Donalt", "Trumpet", "him");
       
                               if (player.getHealth() < 1) {
-                                    Main.animation(texte.Dead, 0);
+                                    Main.animation(texte.Dead, 10);
                                     BarDad();
                               }
       
                               else if (player.getHealth() > 0) {
-                                    Main.animation(texte.wonTrumpet, 0);
+                                    Main.animation(texte.wonTrumpet, 10);
                                     PujinContinue();
                               }
                         }
       
                         else {
-                              Main.animation(texte.ElseBarPujin, 0);
+                              Main.animation(texte.ElseBarPujin, 10);
                               enterScanner.nextLine();
                               BarDad();
                         }
                   }
 
                   else {
-                        Main.animation(texte.ElseBarPujin, 0);
+                        Main.animation(texte.ElseBarPujin, 10);
                         enterScanner.nextLine();
                         BarDad();
                   }
             }
             
             else if (choice == 2) {
-                  Main.animation(texte.BarDadGood, 0);
+                  Main.animation(texte.BarDadGood, 10);
                   PujinContinue();
             }
 
             else {
-                  Main.animation(texte.ElseBarPujin, 0);
+                  Main.animation(texte.ElseBarPujin, 10);
                   enterScanner.nextLine();
                   BarDad();  
             }
       }
 
       public static void PujinContinue() {
-            Main.animation(texte.BarDad4, 0);
+            Main.animation(texte.BarDad4, 10);
 
             if (FindDoggo == 1) {
-                  Main.animation(texte.FindDoggo, 0);
+                  Main.animation(texte.FindDoggo, 10);
 
                   //Set the Dogs name
                   String doggoName = nameScanner.next();
                   doggo.setDoggoName(doggoName);
                   texte.setPlayer(player, doggo, girl);
 
-                  Main.animation(texte.FindDoggo2, 0);
+                  Main.animation(texte.FindDoggo2, 10);
                   karma.setFindDoggo(2);
 
-                  Main.animation(texte.FindDoggo3, 0);
+                  Main.animation(texte.FindDoggo3, 10);
                   Guild();
             }
 
             if (FindDoggo == 2) {
-                  Main.animation(texte.FindDoggoNot, 0);
+                  Main.animation(texte.FindDoggoNot, 10);
                   karma.setFindDoggo(1);
                   Guild();
             }
       }
 
       public static void Guild() {
-            Main.animation(texte.Guild1, 0);
+            Main.animation(texte.Guild1, 10);
             BreakLine();
       }
       public static void Guild2(){
-            Main.animation(texte.Guild2, 0);
+            Main.animation(texte.Guild2, 10);
             BreakLine();
             choice = myScanner.nextInt();
             
 
             switch(choice){
-                  case 1: Main.animation(texte.Quests, 0); Guild(); break;
-                  case 2: Main.animation(texte.Talk_Girl, 0); Guild(); break;
-                  case 3: Main.animation(texte.Talk_Adventurers, 0); Guild(); break;
+                  case 1: Main.animation(texte.Quests, 10); Guild(); break;
+                  case 2: Main.animation(texte.Talk_Girl, 10); Guild(); break;
+                  case 3: Main.animation(texte.Talk_Adventurers, 10); Guild(); break;
                   case 4: EndGuild(); break;
-                  default: Main.animation(texte.ElseGuild, 0); Guild(); break;
+                  default: Main.animation(texte.ElseGuild, 10); Guild(); break;
       }
             
       }
 
       public static void EndGuild(){
-            Main.animation(texte.endGuild1, 0);
+
+            Main.animation(texte.endGuild1, 10);
       }
 
       
