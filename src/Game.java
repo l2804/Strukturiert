@@ -26,10 +26,30 @@ public class Game {
 
       public static void startGame(Game game) {
             texte.setPlayer(player, doggo, girl);
-            Main.animation("Are you a Robot?", 10);
-           Main.animation("...", 100);
-            Main.animation("I don't believe You, please press the folowing line correct, letter by letter.", 10);
-            robot.verification();
+            Main.animation("***Hello Player...***\n", 10);
+            Main.animation("...\n", 1000);
+            Main.animation("***WAIT, Are you a Robot?***\n", 10);
+            Main.animation("...\n", 1000);
+            Main.animation("***I don't believe You, please make the following test to Show you are not a Robot.***\n", 10);
+            Main.animation("***Do you want to Continue?***\n\n", 10);
+            BreakLine();
+            Main.animation("1: Yes\n2: No", 10);
+            BreakLine();
+            int antwort = myScanner.nextInt();
+            if(antwort == 1) {
+                  robot.verification(0);
+                  story();
+            }
+            if(antwort == 69){
+                  int i = 1;
+                  robot.verification(1);
+            }
+            else {
+                  System.exit(0);
+            }
+
+
+
       }
 
       static void story() {
@@ -47,7 +67,7 @@ public class Game {
                   player.setLastName(lastName);
                   texte.setPlayer(player, doggo, girl);
 
-                  if ( ( player.getName().equals("Deine") ) && (player.getLastName().equals("Mutter") || player.getLastName().equals("Mudda") ) ) {
+                  if ( ( player.getName().equals("Deine") ) || player.getName().equals("Your") || player.getName().equals("Yo") && (player.getLastName().equals("Mutter") || player.getLastName().equals("Mudda") || player.getLastName().equals("Mother") || player.getLastName().equals("Mama") ) ) {
                         System.out.println("\nSelber deine Mutter du Hs.\n");
                   }
                   
@@ -213,7 +233,7 @@ public class Game {
 
                         Main.animation(texte.JoinEast2, 10);
                         enterScanner.nextLine();
-                        Bar();
+                        BarDad();
                   }
 
                   else if (choice == 2) {
@@ -237,7 +257,7 @@ public class Game {
 
                         Main.animation(texte.FourTwoZeroSixNine2, 10);
                         enterScanner.nextLine();
-                        Bar();
+                        BarDad();
                   }
 
                   else {
@@ -266,18 +286,21 @@ public class Game {
       }
          
       
-      public static void Bar() { // Bar with Girl  (East 1.1 & East 1.42069) (North 1.1)
+      public static void Bar() { // Bar with Girl  (North 1.1)
             Main.animation(texte.Bar, 10);
-
+            Main.animation("\n\n\n\n***End of the current version of the Game***\n\n\n\n", 10);
+            System.exit(0);
       }
         
       
       public static void Bar2() { // Bar Alone  (West) (East 1.3) (North 1.2)
             Main.animation(texte.Bar2, 10);
+            Main.animation("\n\n\n\n***End of the current version of the Game***\n\n\n\n", 10);
+            System.exit(0);
       }
       
 
-      public static void BarDad() { // Bar of the Dad     (East 1.2)
+      public static void BarDad() { // Bar of the Dad     (East 1.2 & East 1.1 & East 1.42069)
             Main.animation(texte.BarDad, 10);
 
                   //Set the Girls name
@@ -400,11 +423,9 @@ public class Game {
             }
       }
 
-      public static void Guild() {
+      public static void Guild(){
             Main.animation(texte.Guild1, 10);
             BreakLine();
-      }
-      public static void Guild2(){
             Main.animation(texte.Guild2, 10);
             BreakLine();
             choice = myScanner.nextInt();
@@ -423,6 +444,8 @@ public class Game {
       public static void EndGuild(){
 
             Main.animation(texte.endGuild1, 10);
+            Main.animation("\n\n\n\n***End of the current version of the Game***\n\n\n\n", 10);
+            System.exit(0);
       }
 
       

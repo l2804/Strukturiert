@@ -45,7 +45,7 @@ intro = "Hello \n"
         + "Now Let's Start the Game :)\n\n";
 Intro2 =        "In the beginning of our Story you spawn in the woods after you got teleported from your world.\n"
                 + "You are Standing up, and see a Sword called Excalibur in your right hand.\n"
-                + "You can also see, that your HP is" + player.getHealth() + " at a bar on the top of your view."
+                + "You can also see, that your HP is " + player.getHealth() + " at a bar on the top of your view."
                 + "But you don't have the time to think about it, because a Goblin lord jumps right in front of you.\n"
                 + "So, what are you going to do?\n\n";
 Intro3 =        "1: Attack him\n"             + "2: Run away and search for a village\n\n";
@@ -165,7 +165,7 @@ AttackEast2 =   "1: Ask her to Join you on your Journey.\n"       + "2: Just ask
  //You ask her to Join you
 JoinEast =      "You ask her to Join you.\n"       + "... She says Yes.\n\n"
                 + "First you ask her for her Name...\n\n"       + "\n(What is her Name?)\n";
-JoinEast2 =     "She says that her Name is " + girl.getGirlName() + "" + "Press Enter to Continue\n"
+JoinEast2 =     "She says that her Name is " + girl.getGirlName() + "" + "\n\n(Press Enter to Continue)\n"
                 + "\nAs next you go to a Bar " + girl.getGirlName() + " knows\n\n"      + "Press Enter to Continue\n\n";
 
 
@@ -213,7 +213,7 @@ West =  "You walked to the West\n" + "\nThere is a bar."
                         
 //Bar with a Girl/Women
 Bar =   "In the bar you get each a beer and talk\n\n"       + girl.getGirlName() + ": So, I am 18 years old, and you?\n\n"
-        + "You tell her, that you are" + player.getAge() + " years old\n"         + girl.getGirlName() + ":" + player.getAge() + ", huh.\n...That's a great age.\n";
+        + "You tell her, that you are " + player.getAge() + " years old\n"         + girl.getGirlName() + ": " + player.getAge() + ", huh, ...That's a great age.\n";
 
 
 
