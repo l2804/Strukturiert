@@ -106,7 +106,7 @@ Run3 = """
 God = """
 
         Congrats, you touch a god rock and get the powers of a god
-        You will have it easy to contine
+        You will have it easy to continue
 
         Press 1 to continue the game with the powers of a God.
 
@@ -371,12 +371,14 @@ BarDad31 =     "\nSo, you start to talk.\n"       + "\n" + girl.getGirlName() + 
                 + "(WTF, does that mean I'm old in this world?)\n"      + girl.getGirlName() + ": Oh, good, that's really good.\n"        + "\n\n"
                 +  "After a While the dad comes.\n"         + girl.getGirlName() + "'s dad: Hey, you must be the young man who saved my daughter.\n"
                 + player.getName() + ": Yeah, that's me, nice to meet you ahh...\n"      + girl.getGirlName() + "'s dad: Wladimir, Wladimir Pujin.\n"
-                + player.getName() + ": Pujin, aren't you the president of Russia?\n"       + "Wladimir Pujin: Wait, you are from the Earth?\n"
-                + player.getName() + ": Yeah, I got ported her one Day ago.\n"      + "Wladimir Pujin: Oh, that's interesting.\n"      + player.getName() + ": And when did you get here.\n"
-                + "Wladimir Pujin: About years ago.\n"          + "\nWhat are you going to say?\n ";
+                + player.getName() + ": Pujin, aren't you the president of Russia?\n"       + "Wladimir Pujin: Wait, you are from Earth?\n"
+                + player.getName() + ": Yeah, I got ported here one Day ago.\n"      + "Wladimir Pujin: Oh, that's interesting.\n"      + player.getName() + ": And when did you get here.\n" + "Pujin: What is the year it is on earth?\n"
+                + player.getName() + ": 2023, why?\n"   + "Wladimir Pujin: Then I came here bout 3 years ago, time here and on Earth are different.\n"  + player.getName() + ": Wait, does that mean it wasn't you who attacked Ukraine?\n"
+                + "Pujin: WHAT DID I DO!?\n" + "Pujin: That wasn't me, someone must have taken my place.\n"
+                + "\nWhat are you going to say?\n ";
 BarDad3 = """
-        1: Wodka, Wodka, Putin, Blyat.
-        2: You are a great man.
+        1: Wodka, Wodka, Putin, Blyat. (I don't trust you, you are a shitty man)
+        2: That makes sense, I believe you.
         """;
 
 
@@ -394,13 +396,13 @@ BarDadGood =    player.getName() + ": You are a great ruler Pujin."     + "\nPuj
 
 
 
-BarDadWon =     "\nPujin: You won against me.";
+BarDadWon =     "\nPujin: You won against me.\n";
 
 
 
 BarDad4 =       "Pujin: You are a worthy Man for my daughter.\n"    + player.getName() + ": Sorry, but I can't marry your daughter"
                 + ", I have to find a way back home."    + "\nPujin: Just let her Help you and if you don't find a way back home you will come back with her and marry her\n"
-                + player.getName() + ": Ok, but if I find a way back home, I will let you here with your daughter.\n"    + player.getName() + ": Ok, but I'll get her back safe, I swear.\n";
+                + player.getName() + ": Ok, but if I find a way back home, I will leave your daughter here with you.\n"    + player.getName() + ": But I'll get her back safe, I swear.\n";
 
 
 
@@ -470,18 +472,18 @@ Guild1 = """
         (What do you wanna Do First?.)""";
 Guild2 =        "1: Look at the Missions" + "\n2: Talk to " + girl.getGirlName() + "\n3: Talk to the Adventurers There" + "\n4: Talk to the Woman at the Desk\n";
 
-Quests =        "You Walk over and Lok at the Missions on the Board.";
+Quests =        "You Walk over and Lok at the Missions on the Board." + "\n***To Be Continued***";
 
-Talk_Adventurers =      "You Go over and Try to tlk to a Adventurer.";
+Talk_Adventurers =      "You Go over and Try to talk to a Adventurer." + "\n***To Be Continued***\n";
 
-Talk_Girl_Guild =    "You go to the Desk and talk to " + girl.getGirlName();
+Talk_Girl_Guild =    "You go to the Desk and talk to " + girl.getGirlName() + "\n***To Be Continued***\n";
 
 endGuild1 =     "You talk to the Woman.\n" + "The Woman at the counter starts to talk as soon as you are near enough to hear her talking normally.\n\n"
-                + "Counter Woman: Hello, how can I help you?\n" + player.getName() + ": Yes, thank you, can my friend and I Register as Adverturers?\n"
-                + girl.getName() + ": Me too? I thougt only you would register, not Me\n" + player.getName() + ": Yes, you too, you are in my Party, too. It will be Useful."
+                + "Counter Woman: Hello, how can I help you?\n" + player.getName() + ": Yes, thank you, can my friend and I Register as Adventurers?\n"
+                + girl.getName() + ": Me too? I thought only you would register, not Me\n" + player.getName() + ": Yes, you too, you are in my Party, too. It will be Useful."
                 + girl.getName() + "";
 
-ElseGuild =     "Because you didn't choose anything that was Chooseable, you can do it Again.";
+ElseGuild =     "Because you didn't choose anything that was selectable, you can do it Again.";
 
 }
 }

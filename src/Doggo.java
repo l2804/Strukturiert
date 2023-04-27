@@ -2,7 +2,7 @@
 
 public class Doggo extends Player {
     private String doggoName;
-    private Boolean hasSchwanz; 
+    //private Boolean hasSchwanz;
 
 
     //set the Dogs Name
@@ -14,7 +14,7 @@ public class Doggo extends Player {
         return doggoName;
     }
 
-    public Boolean gethasSchwanz(){
+    /**public Boolean gethasSchwanz(){
         return hasSchwanz; 
     }
 
@@ -25,5 +25,6 @@ public class Doggo extends Player {
     public void sethasSchwanzfalsch(){
         hasSchwanz=false; 
     }
+     */
     
 }

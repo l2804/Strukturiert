@@ -13,7 +13,7 @@ public class Girl extends Player{
         return girlName;
     }
 
-    // set the Girls Age
+    //set the Girls Age
     public int getgirlAge() {
         return girlAge;
     }

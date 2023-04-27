@@ -13,9 +13,9 @@ public class Shellsort {
 
         // Start with a big gap, then reduce the gap
         for (int gap = n / 2; gap > 0; gap /= 2) {
-            // Do a gapped insertion sort for this gap size.
+            // Do a gaped insertion sort for this gap size.
             // The first gap elements a[0..gap-1] are already
-            // in gapped order keep adding one more element
+            // in gaped order keep adding one more element
             // until the entire array is gap sorted
             for (int i = gap; i < n; i += 1) {
                 // add a[i] to the elements that have been gap

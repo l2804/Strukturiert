@@ -18,27 +18,27 @@ public class Game {
       public static Fight fight;
       public static Texte texte = new Texte();
       public static Random rand = new Random();
-      public static int FindDoggo = rand.nextInt(3);
+      public static int FindDoggo = 2;
       
       public static int ia = 0;
 
       public static void startGame(Game game) {
             texte.setPlayer(player, doggo, girl);
             Main.animation("***Hello Player...***\n", 0);
-            Main.animation("...\n", 1000);
+            Main.animation("...\n", 0);
             Main.animation("***WAIT, Are you a Robot?***\n", 0);
-            Main.animation("...\n", 1000);
+            Main.animation("...\n", 0);
             Main.animation("***I don't believe You, please make the following test to Show you are not a Robot.***\n", 0);
             Main.animation("***Do you want to Continue?***\n\n", 0);
             BreakLine();
             Main.animation("1: Yes\n2: No", 0);
             BreakLine();
-            int antwort = myScanner.nextInt();
-            if(antwort == 1) {
+            int answer = myScanner.nextInt();
+            if(answer == 1) {
                   robot.verification(0);
                   story();
             }
-            if(antwort == 69){
+            if(answer == 69){
                   robot.verification(1);
             }
             else {
@@ -233,6 +233,7 @@ public class Game {
                         Main.animation(texte.JoinEast, 0);
 
                               //Set the Girls name
+                              ia = 1;
                               String girlName = nameScanner.next();
                               girl.setGirlName(girlName);
                               texte.setPlayer(player, doggo, girl);
@@ -257,6 +258,7 @@ public class Game {
                         Main.animation(texte.FourTwoZeroSixNine, 0);
 
                               //Set the Girls name
+                              ia = 1;
                               String girlName = nameScanner.next();
                               girl.setGirlName(girlName);
                               texte.setPlayer(player, doggo, girl);
@@ -310,7 +312,7 @@ public class Game {
       public static void BarDad() { // Bar of the Dad     (East 1.2 & East 1.1 & East 1.42069)
             Main.animation(texte.BarDad, 0);
 
-                  if(ia ==0) {
+                  if(ia == 0) {
                         Main.animation(texte.BarDad1, 0);
                         //Set the Girls name
                         String girlName = nameScanner.next();
@@ -409,8 +411,9 @@ public class Game {
 
       public static void PujinContinue() {
             Main.animation(texte.BarDad4, 0);
+            FindDoggo = rand.nextInt(3);
 
-            if (FindDoggo == 1) {
+            if (FindDoggo == 1 || FindDoggo == 0) {
                   Main.animation(texte.FindDoggo, 0);
 
                   //Set the Dogs name
@@ -419,13 +422,13 @@ public class Game {
                   texte.setPlayer(player, doggo, girl);
 
                   Main.animation(texte.FindDoggo2, 0);
-                  karma.setFindDoggo(2);
+                  karma.setFindDoggo(karma.getFindDoggo() + 1);
 
                   Main.animation(texte.FindDoggo3, 0);
                   Guild();
             }
 
-            if (FindDoggo == 2) {
+            if (FindDoggo == 2 || FindDoggo == 3) {
                   Main.animation(texte.FindDoggoNot, 0);
                   karma.setFindDoggo(1);
                   Guild();
